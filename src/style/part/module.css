@@ -1,0 +1,508 @@
+/*
+  Module
+*/
+/*
+* Match Icons
+*/
+[class^="m-i-"], [class*=" m-i-"] {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width:32px;
+  height:32px;
+}
+.m-i-1{
+  background-image: url(../img/mi1.svg);
+}
+.m-i-2{
+  background-image: url(../img/mi2.svg);
+}
+.m-i-3{
+  background-image: url(../img/mi3.svg);
+}
+.m-i-4{
+  background-image: url(../img/mi4.svg);
+}
+.m-i-5{
+  background-image: url(../img/mi5.svg);
+}
+.m-i-6{
+  background-image: url(../img/mi6.svg);
+}
+.m-i-7{
+  background-image: url(../img/mi7.svg);
+}
+.m-i-8{
+  background-image: url(../img/mi8.svg);
+}
+.m-i-9{
+  background-image: url(../img/mi9.svg);
+}
+.m-i-10{
+  background-image: url(../img/mi10.svg);
+}
+.m-i-11{
+  background-image: url(../img/mi11.svg);
+}
+
+/*
+* Predictors Icons
+*/
+[class^="p-i-"], [class*=" p-i-"] {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width:32px;
+  height:32px;
+  vertical-align: text-bottom;
+}
+.p-i-1{
+  background-image: url(../img/p1.svg);
+}
+.p-i-2{
+  background-image: url(../img/p2.svg);
+}
+.p-i-3{
+  background-image: url(../img/p3.svg);
+}
+.p-i-4{
+  background-image: url(../img/p4.svg);
+}
+.p-i-5{
+  background-image: url(../img/p5.svg);
+}
+
+.close {
+  color: #99fffd;
+  font-size: 31px;
+  margin-right: 10px;
+  opacity: 0.6;
+  text-shadow: 0 1px 0 #000000;
+}
+
+.tse-sc{
+  max-height: 450px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  padding-right: 15px;
+}
+
+.nav-pager{
+  text-align: right;
+  border-top: 1px solid #4d5963;
+  /*
+  background-image: inline(../img/match-tr-bg-line.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-top: 1px solid #424f5a;
+  background-image: linear-gradient(to bottom, rgb(55, 66, 76) 0%, rgba(46, 51, 55, 0) 100%);
+  */
+  margin-bottom: 10px;
+  
+  .pagination{
+    margin: 0 2px 0 0;
+    text-align: center;
+    
+    li{
+      &.active{
+        a{
+          background: #424f5a;
+          border-color: #424f5a;
+          box-shadow: 3px 2px 0 2px rgba(0, 0, 0, 0.18);
+          height: 35px;
+          padding: 10px 0 0;
+        }
+      }
+      a{
+        background: #454a4e;
+        color:$link-light-blue;
+        border-radius: 0px;
+        border: 1px solid rgba(3, 105, 153, 0);
+        padding: 8px 0 0;
+        width: 35px;
+        height: 32px;
+        line-height: 1;
+        display: inline-block;
+        position: relative;
+        transition: $tease;
+        transform: skew(-5deg);
+        
+        &:active,
+        &:hover,
+        &:focus{
+          background: #424f5a;
+          border-color: #424f5a;
+          transform: skew(-5deg);
+        }
+      }
+      span{
+        background: transparent;
+        color:$link-light-blue;
+        border-radius: 50px;
+      }
+      /*
+      &.prr{
+        a{
+          padding: 4px 0;
+          width: 24px;
+          margin: 4px 2px;
+          display: inline-block;
+          height: 24px;
+        }
+      }
+      */
+    }
+  }
+  
+}
+
+/*newsicons*/
+
+[class^="n-i-"], [class*=" n-i-"] {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width:100px;
+  height:100px;
+}
+.n-i-hot{
+  background-image: url(../img/hotnews.svg);
+}
+
+
+/* block zames */
+
+/* slider */
+.m-zames{
+  margin: 0;
+  padding-top: 0!important;
+  .nrm-slider{
+    margin: 0;
+    
+    ul li:after{
+      box-shadow: 0 2px 30px 3px #f91414;
+    }
+    .mlh {
+      overflow: hidden;
+      span{
+        text-align: right;
+        font-size: 24px;
+        line-height: 1;
+        text-shadow: 0 0 5px #000;
+        a{
+          color: #7fa2ba;
+        }
+      }
+      i {
+        color: #f33;
+        font-size: 50px;
+        text-shadow: 0 0 10px #73170c;
+     }
+    }
+  }
+}
+
+.mlh{
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0px 15px;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+
+    &:before {
+      content: inline(../img/hline.png);
+      top: 50%;
+      right: 100%;
+      position: absolute;
+      margin-right: 0px;
+      margin-top: -19px;
+    }
+    &:after {
+      content: inline(../img/hline1.png);
+      top: 50%;
+      left: 100%;
+      position: absolute;
+      margin-left: 0px;
+      margin-top: -19px;
+    }
+    a{
+      color: #7fa2ba;
+    }
+    .btn{
+      color: #fff;
+    }
+  }
+}
+
+.fights{
+  margin-bottom: 15px;
+  
+  .iconFights{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-image: url(../img/mi14.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bestEvent{
+    margin-bottom: 20px;
+    
+    a{
+      display: block;
+      position: relative;
+      
+      &:hover,
+      &:focus,
+      &:active{
+        text-decoration: none;
+      }
+      
+      > b{
+        display: block;
+        height: 120px;
+        overflow: hidden;
+        font-weight: 400;
+        border: 2px solid #424f5a;
+        position: relative;
+        img{
+          width:100%;
+        }
+        > span{
+          position: absolute 0 * * 0;
+          display: block;
+          padding: 2px 10px;
+          background: #424f5a;
+          color:#fff;
+          font-size: 13px;
+          i{
+            margin-right: 5px;
+            vertical-align: text-bottom;
+          }
+          &:after{
+            content: '';
+            display: block;
+            background: #424f5a;
+            height: 100%;
+            width: 6px;
+            top: 0;
+            right: -3px;
+            bottom: 0;
+            position: absolute;
+            transform: skew(-15deg);
+          }
+        }
+        
+        time{
+          position: absolute 5px 5px * *;
+          color: #fff;
+          text-shadow: 1px 1px 2px #000;
+          font-size: 11px;
+        }
+        
+        &:after{
+          content:'';
+          display: block;
+          position: absolute * 0 0 0;
+          height: 50px;
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%);
+        }
+      } /*b*/
+    } /*a*/
+  }
+  .bestKill{
+    a{
+      > span{
+        color:#fff;
+        margin-top: -26px;
+        display: block;
+        position: relative;
+        
+        .heroava{
+          border: 2px solid #424f5a;
+          width: 80px;
+          float: left;
+          margin: 0 15px 0 15px;
+          
+          img{
+            width: 100%;
+          }
+        }
+        em{
+          color: #ff0000;
+          display: block;
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-style: normal;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        u{
+          text-decoration: none;
+          font-size: 13px;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }/*a*/
+  }/*bestKill*/
+  
+  .comeBack{
+    a{
+      > span{
+        color:#fff;
+        margin-top: -30px;
+        display: block;
+        position: relative;
+        
+        .teamLogo{
+          width: 80px;
+          float: left;
+          margin: 0 15px 10px 15px;
+          text-align: center;
+          
+          img{
+            width: 55px;
+            height: 55px;
+          }
+        }
+        em{
+          color: #ff0000;
+          display: block;
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-style: normal;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        u{
+          text-decoration: none;
+          font-size: 13px;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          span{
+            color: #c78730;
+            img{
+              margin-right: -1px;
+              width: 23px;
+              margin-top: -1px;
+            }
+          }
+          i{
+            margin: 0 3px;
+            font-size: 11px;
+            color: #8a8a8a;
+          }
+        }
+      }
+    }/*a*/
+  }/*comeBack*/
+  
+  .multideath{
+    a{
+      > span{
+        margin-top: -30px;
+        display: block;
+        position: relative;
+        
+        .teamHeroes{
+          display: block;
+          margin: 0 15px;
+          background: #424f5a;
+          overflow: hidden;
+          border: 1px solid #424f5a;
+          margin-bottom: -2px;
+          u{
+            margin: 0;
+            border: 1px solid #424f5a;
+            display: block;
+            width: 20%;
+            float: left;
+            position: relative;
+            overflow: hidden;
+
+            &.dead{
+              img{
+                opacity: .5;
+              }
+              &:after{
+                content: '';
+                top: 50%;
+                right: -10px;
+                position: absolute;
+                display: block;
+                height: 1px;
+                width: 125%;
+                background: #c50c0c;
+                transform: rotate(30deg);
+              }
+            }
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        em{
+          color: #ff0000;
+          display: block;
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-style: normal;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin: -55px 0 0 14px;
+        }
+        u{
+          text-decoration: none;
+          font-size: 13px;
+          span{
+            color: #c78730;
+            img{
+              margin-right: -1px;
+              width: 23px;
+              margin-top: -1px;
+            }
+          }
+          i{
+            margin: 0 3px;
+            font-size: 11px;
+            color: #8a8a8a;
+          }
+        }
+      }
+    }/*a*/
+  }/*multideath*/
+
+}/*fights*/
+
+.nrm-slider .bestEvent{
+  padding: 0 10px;
+}
+
+/* .block zames */
+
+
+
+
+
+
