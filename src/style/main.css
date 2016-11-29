@@ -2,9 +2,7 @@
 * Third Party
 */
 @import "../../bower_components/normalize.css/normalize.css";
-@import "../assets/css/bootstrap-chosen.css";
 @import "../assets/css/perfect-scrollbar.min.css";
-@import "../assets/css/bootstrap-switch.css";
 @import "../assets/css/owl.carousel.css";
 @import "../assets/css/owl.theme.css";
 
@@ -28,33 +26,8 @@
 * Pages
 */
 
-/*match-page*/
-@import "part/match-page.css";
-@import "part/match-player.css";
-@import "part/match-player-chat.css";
-@import "part/match-player-stat.css";
-@import "part/match-player-log.css";
-@import "part/match-section-koef.css";
-@import "part/match-section-prognoz.css";
-@import "part/match-section-sravni.css";
-@import "part/match-section-players.css";
-@import "part/match-section-picks.css";
-@import "part/match-section-comments.css";
-@import "part/match-section-news.css";
-@import "part/match-section-soc.css";
-
-/*match-list-page*/
-@import "part/page-match-list.css";
-
-/*news and news-page*/
-@import "part/news.css";
-@import "part/vod-slider.css";
-
 /*home page*/
-@import "part/home.css";
+@import "part/page-home.css";
 
-/*home page*/
-@import "part/teams-page.css";
-
-/*states*/
-@import "part/state.css";
+/*match page*/
+@import "part/page-match.css";
