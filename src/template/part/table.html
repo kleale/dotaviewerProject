@@ -1,0 +1,107 @@
+<!-- /part/table.html -->
+ 
+ 
+{% set tlogo = ['pic-20160615-264x150-3615944418.jpeg', 'pic-20161101-300x124-5496295867.png', 'pic-20160912-600x267-6676783403.png', 'pic-20161108-265x150-5005005574.jpeg', 'pic-20161012-255x101-3261850867.png', 'pic-20161107-300x117-2046754304.png'] %}
+
+{% set team = ['Wings', 'OG', ' Evil Geniuses', 'EHOME', 'NewBee', 'Virtus.Pro'] %}
+{% set logo = ['pic-20161110-600x600-7320131375.png', 'pic-20161006-270x270-1040210323.png', 'pic-20161110-600x600-5478339632.png', 'pic-20161110-500x500-918003572.png', 'pic-20161110-600x450-6323255579.png'] %}
+{% set flag = ['1', '2', '3', '4', '5', '6'] %}
+{% set map = ['1', '2', '3', '4', '5'] %}
+
+<script>
+// команда-турнир фильтр
+  $(document).ready(function() {
+    $('#mlt-filter').on('keyup', function(){
+      $(this).next().addClass('open');
+    });
+    $('#mlt-filter1').on('keyup', function(){
+      $(this).next().addClass('open');
+    });
+    $(document).click(function(){
+      $('.mlt-filter').removeClass('open');
+    });
+    $("#dropdown").click(function(e){
+      e.stopPropagation();
+      $('.mlt-filter').removeClass('open');
+    });
+  });
+</script>
+
+<div class="mlist">
+  <div class="mlt-filter">
+    <div class="row">
+      <div class="col-sm-4 col-md-offset-2">
+        <div class="input-group">
+          <input type="text" id="mlt-filter" class="form-control" placeholder="Турнир" placeholder="Турнир" autocomplete="off">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Мажор 1</a></li>
+              <li><a href="#">Мажор 2</a></li>
+              <li><a href="#">Мажор 3</a></li>
+              <li><a href="#">Мажор 4</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="input-group">
+          <input type="text" id="mlt-filter1" class="form-control" placeholder="Турнир" placeholder="Команда" autocomplete="off">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Мажор 1</a></li>
+              <li><a href="#">Мажор 2</a></li>
+              <li><a href="#">Мажор 3</a></li>
+              <li><a href="#">Мажор 4</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="mtable">
+
+    {% for i in 0..19 %}
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/{{random(tlogo)}}'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта {{random(map)}}
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">{{random(team)}}</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/{{random(flag)}}.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/{{random(logo)}}"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/{{random(logo)}}"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/{{random(flag)}}.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">{{random(team)}}</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    {% endfor %}
+
+  </table>
+</div>
+  

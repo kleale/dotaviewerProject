@@ -13,13 +13,15 @@ module.exports = {
     "$MH": "600px",
   
     // Colors
-    "$text-main": "#fff",
-    "$text-gray-1": "#5c5f62",
-    "$text-gray-2": "#6c6c6c",
-    "$text-gray-3": "#8f8f8f",
+    "$text-main": "#d1c0af",
 
-    "$link-blue": "#2faee7",
-    "$link-blue-active": "#2faee7",
+    "$link-red": "#f05020",
+    "$link-red-active": "#f07820",
+    "$button-primary": "#f05020",
+    "$button-primary-text": "#fff",
+  
+  
+  
     "$link-light-blue": "#a6c6cb",
     "$link-light-blue-active": "#fff",
     "$link-white": "#fff",
@@ -32,8 +34,6 @@ module.exports = {
     "$bg-main": "#33393c",
     "$bg-sub": "#252a2c",
   
-    "$button-blue": "#037db5",
-    "$button-blue-text": "#fff",
     "$button-gray": "#444950",
     "$button-gray-text": "#8f8f8f",  
     

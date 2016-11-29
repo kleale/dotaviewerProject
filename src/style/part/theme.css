@@ -29,18 +29,19 @@
 */
 .dropdown.open{
   > a{
-    background: $bg-dropdown;
+    background: #f05020;
     color: $link-light-blue-active;
     box-shadow: 0 6px 12px rgba(0,0,0,.2);
+    border-color: transparent;
   }
 }
 
 .dropdown-menu {
-  background: #035880;
+  background: #3c3229;
   box-shadow: 7px 7px 10px rgba(0,0,0,.4);
   padding: 0;
   margin: -1px 0;
-  border: 1px solid #0b75a7;
+  border: 1px solid #f05020;
   border-radius: 0 0 $br $br;
   width: 100%;
   
@@ -48,13 +49,15 @@
     &:nth-child(2n+1){
       background: rgba(255, 255, 255, 0.04);
     }
-    &.active a{
-      background: $button-blue;
-      color: $button-blue-text;
+    &.active a,
+    &.active a:focus,
+    &.active a:hover{
+      background: $button-primary;
+      color: $button-primary-text;
     }
     
     a{
-      color: #7faec3;
+      color: #f05020;
       padding: 4px 12px;
       font-size: 12px;
       overflow: hidden;
@@ -65,7 +68,7 @@
       &:hover{
         text-decoration: none;
         color: $link-gray-active;
-        background: $button-blue;
+        background: $button-primary;
       }
     }
   }
@@ -122,15 +125,15 @@
   }
 }
 .btn-default{
-  background: #454a4e;
-  color: #b5b5b5;
+  background: #342c27;
+  color: $text-main;
   
   &:active,
   &:focus,
   &:hover{
-    background: $button-blue;
-    color: $button-blue-text;
-    border-color: $button-blue;
+    background: $button-primary;
+    color: $button-primary-text;
+    border-color: $button-primary;
   } 
 }
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
@@ -153,15 +156,17 @@
     background-color: $bg-dropdown;
 }
 .open>.dropdown-toggle.btn{
-  background-color: $bg-dropdown;
-  color: $link-gray;
+  background-color: #f05020;
+  border-color: #f05020;
+  color: #fff;
   border-radius: $br $br 0 0;
   position: relative;
   /*z-index: 1002;*/
 }
 body .open>.dropdown-toggle.btn-default:focus{
-  background-color: $bg-dropdown;
-  color: $link-gray;
+  color: #fff;
+  background-color: #f05020;
+  border-color: #f05020;
 }
 .btn-border{
   background: transparent;
@@ -170,13 +175,13 @@ body .open>.dropdown-toggle.btn-default:focus{
   &:active,
   &:focus,
   &:hover{
-    background: $button-blue;
-    border-color: $button-blue;
-    color: $button-blue-text;
+    background: $button-primary;
+    border-color: $button-primary;
+    color: $button-primary-text;
   }
   
   &.btn-primary{
-    color: $link-blue;
+    color: $link-red;
     &.active{
       color: #fff;
     }
@@ -194,9 +199,9 @@ body .open>.dropdown-toggle.btn-default:focus{
 .btn-default.active, 
 .btn-default:active, 
 .open>.dropdown-toggle.btn-default {
-    color: #7faec3;
-    background-color: #035880;
-    border-color: #0b75a7;
+    color: #fff;
+    background-color: #f05020;
+    border-color: #f05020;
 }
 
 
@@ -229,15 +234,16 @@ body .open>.dropdown-toggle.btn-default:focus{
 */
 .form-control{
   border-radius: $br;
-  background: #454a4e;
-  border: 0;
+  background: #342c27;
+  border: transparent;
   color: $text-main;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: $bsh;
+  transition: $tease;
   
   &:active,
   &:focus,
   &:hover{
-    box-shadow: inset 0 0 0px 1px rgb(29, 123, 197);
+    box-shadow: inset 0 0 0px 1px rgb(240, 80, 32);
   }
 }
 .input-sm {
@@ -289,7 +295,7 @@ Choosen
 .chosen-container-multi{
   
   .chosen-choices{
-    background-color: color($button-blue l(25%));
+    background-color: color($button-primary l(25%));
     border-color: transparent;
     position: relative;
     
@@ -300,13 +306,13 @@ Choosen
       width: 0;
       height: 0;
       vertical-align: middle;
-      border-top: 5px solid color($button-blue l(60%));
+      border-top: 5px solid color($button-primary l(60%));
       border-right: 5px solid transparent;
       border-left: 5px solid transparent;
     }
     
     .search-choice{
-      background-color: $button-blue;
+      background-color: $button-primary;
       border: 0;
       border-radius: $br;
       color: #fff;
@@ -340,8 +346,8 @@ Choosen
 }
 .chosen-container {
   .chosen-drop {
-    background: color($button-blue l(30%));
-    border-color: color($button-blue l(60%));
+    background: color($button-primary l(30%));
+    border-color: color($button-primary l(60%));
     border-bottom-right-radius: $br;
     border-bottom-left-radius: $br;
   }
@@ -354,7 +360,7 @@ Choosen
 }
 .chosen-container-active .chosen-choices{
   box-shadow: none;
-  border-color: color($button-blue l(60%));
+  border-color: color($button-primary l(60%));
   border-bottom-right-radius: $br;
   border-bottom-left-radius: $br;
   
@@ -382,7 +388,7 @@ Tabs mobile
       width: 0;
       height: 0;
       vertical-align: middle;
-      border-top: 5px solid color($button-blue l(60%));
+      border-top: 5px solid color($button-primary l(60%));
       border-right: 5px solid transparent;
       border-left: 5px solid transparent;
   }
@@ -395,7 +401,7 @@ Tabs mobile
     border-bottom-left-radius: 0;
     border-color:transparent;
     &.open{
-      background: color($button-blue l(35%));
+      background: color($button-primary l(35%));
       color: #fff;
     }
   }
@@ -408,7 +414,7 @@ Tabs mobile
     li{
       float:none;
       text-align: left;
-      border-color: color($button-blue l(60%));
+      border-color: color($button-primary l(60%));
       margin-bottom: 0;
       a{
         float: none;

@@ -14,6 +14,13 @@
    <!-- Import bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/fav/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/img/fav/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/img/fav/manifest.json">
+  <link rel="mask-icon" href="/img/fav/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  
   <!-- Import main styles -->
   <link rel="stylesheet" href="/css/main.css">
   
@@ -34,94 +41,872 @@
 </head>
 <body class="dotaBg">  
   <div class="container mainwrap">
-    <!-- breadcrumb.html -->
-<div class="bread">
-  <ol id="breadcumbs" class="breadcrumb hidden-xs">
-    <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
-      <a itemprop="url" href="/"><span itemprop="title">Главная</span></a>
-    </li>
-    <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
-      <a title="Dota 2" itemprop="url" href="/dota-2"><span itemprop="title">Название матча</span></a>
-    </li>
-  </ol>
-</div>
     
     <div class="otstup">
     
-      <section class="">
-
+      <section class="herotext">
+        Приветственный текст. Равным образом укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Не следует, однако забывать, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития. 
       </section>
+      
+      <section class="homeTable">
+        
+        <!-- /part/table.html -->
+ 
+ 
 
+
+
+
+
+
+
+<script>
+// команда-турнир фильтр
+  $(document).ready(function() {
+    $('#mlt-filter').on('keyup', function(){
+      $(this).next().addClass('open');
+    });
+    $('#mlt-filter1').on('keyup', function(){
+      $(this).next().addClass('open');
+    });
+    $(document).click(function(){
+      $('.mlt-filter').removeClass('open');
+    });
+    $("#dropdown").click(function(e){
+      e.stopPropagation();
+      $('.mlt-filter').removeClass('open');
+    });
+  });
+</script>
+
+<div class="mlist">
+  <div class="mlt-filter">
+    <div class="row">
+      <div class="col-sm-4 col-md-offset-2">
+        <div class="input-group">
+          <input type="text" id="mlt-filter" class="form-control" placeholder="Турнир" placeholder="Турнир" autocomplete="off">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Мажор 1</a></li>
+              <li><a href="#">Мажор 2</a></li>
+              <li><a href="#">Мажор 3</a></li>
+              <li><a href="#">Мажор 4</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="input-group">
+          <input type="text" id="mlt-filter1" class="form-control" placeholder="Турнир" placeholder="Команда" autocomplete="off">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Мажор 1</a></li>
+              <li><a href="#">Мажор 2</a></li>
+              <li><a href="#">Мажор 3</a></li>
+              <li><a href="#">Мажор 4</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="mtable">
+
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161101-300x124-5496295867.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 2
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">OG</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/4.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161006-270x270-1040210323.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/2.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">OG</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161101-300x124-5496295867.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 1
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">EHOME</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/6.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/5.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">OG</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161101-300x124-5496295867.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 4
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">Wings</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/2.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161006-270x270-1040210323.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161006-270x270-1040210323.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/6.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">Virtus.Pro</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161012-255x101-3261850867.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 5
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">NewBee</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/1.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x450-6323255579.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/3.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">OG</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161108-265x150-5005005574.jpeg'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 3
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">Virtus.Pro</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/2.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x450-6323255579.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161006-270x270-1040210323.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/1.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href=""> Evil Geniuses</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161107-300x117-2046754304.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 5
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href=""> Evil Geniuses</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/1.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/6.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">OG</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161108-265x150-5005005574.jpeg'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 5
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href=""> Evil Geniuses</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/1.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x450-6323255579.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/5.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">NewBee</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161107-300x117-2046754304.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 5
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">OG</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/3.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-5478339632.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/4.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">OG</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161101-300x124-5496295867.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 2
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href=""> Evil Geniuses</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/2.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x450-6323255579.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/4.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href=""> Evil Geniuses</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 5
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href=""> Evil Geniuses</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/2.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161006-270x270-1040210323.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-5478339632.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/3.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">EHOME</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161107-300x117-2046754304.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 2
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">OG</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/6.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x450-6323255579.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x450-6323255579.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/4.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">Virtus.Pro</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161108-265x150-5005005574.jpeg'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 4
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">OG</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/4.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-5478339632.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/6.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">OG</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20160912-600x267-6676783403.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 4
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">EHOME</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/5.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161006-270x270-1040210323.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/2.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href=""> Evil Geniuses</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161012-255x101-3261850867.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 4
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href=""> Evil Geniuses</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/1.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/3.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">OG</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161108-265x150-5005005574.jpeg'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 1
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">Virtus.Pro</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/5.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/1.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">OG</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161107-300x117-2046754304.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 3
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">OG</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/6.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/1.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">Virtus.Pro</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 2
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">EHOME</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/4.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/3.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">Wings</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161108-265x150-5005005574.jpeg'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 4
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">OG</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/1.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-500x500-918003572.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x450-6323255579.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/3.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href=""> Evil Geniuses</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20161108-265x150-5005005574.jpeg'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 2
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href="">NewBee</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/2.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161006-270x270-1040210323.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x450-6323255579.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/3.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">NewBee</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+      <tr class="mItem" data-href="http://game-tournaments.com/link" itemscope="itemscope" itemtype="https://schema.org/Event">
+
+        <td class="tname">
+          <a class="tour-pop"  itemprop="name" data-placement="top" data-container="body" title="Esports Championship League - Америка" data-content=" <img src='http://game-tournaments.com/media/tournament/pic-20160615-264x150-3615944418.jpeg'><b>Регулярный сезон</b>
+          <span><i class='gti gti-trophy'></i> Малайзия, Куала Лумпур</span>
+          <span><i class='gti gti-clock-o'></i> 10 апр — 20 апр</span><span><i class='gti gti-money'></i> 200 000$</span>">
+            <img src='http://game-tournaments.com/media/tournament/pic-20160912-600x267-6676783403.png'>
+          </a>
+        </td>
+        <td class="mapName">
+          Карта 3
+        </td>
+        <td class="tdInfo">
+          <span class="tn1" href=""> Evil Geniuses</span>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/1.png" alt="Европа" title="Европа">
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+          <span class="mscore">
+            VS
+          </span>
+          <img class="tlogo" src="http://game-tournaments.com/media/logo/pic-20161006-270x270-1040210323.png"/>
+          <span class="flag">
+            <img src="http://game-tournaments.com/media/flag/4.png" alt="Европа" title="Европа">
+          </span>
+          <span class="tn2" href="">Wings</span>
+        </td>
+
+        <td class="hasVod">
+          <a href="#" title="Есть видео на русском"><span>RU</span></a>
+          <a href="#" title="Has english video"><span>EN</span></a>
+        </td>
+
+        <td class="tdDate"><time title="17 июн 2016, 11:00" datetime="2016-06-17T11:00:00+03:00" itemprop="startDate">12 авг в 10:15</time></td>
+
+      </tr>
+    
+
+  </table>
+</div>
+  
+        
+      </section>
+      
+      <!-- pager.html -->
+<nav class="nav-pager">
+  <ul class="pagination">
+    <li class="active"><a href="javascript:;">1</a></li>
+    <li><a href="javascript:;">2</a></li>
+    <li><a href="javascript:;">3</a></li>
+    <li><a href="javascript:;">4</a></li>
+    <li><a href="javascript:;">5</a></li>
+    <li class="prr"><a href="javascript:;"><span aria-hidden="true">»</span></a></li>
+  </ul>
+</nav>
+      
       <!-- footer.html -->
 <footer class="footer">
   <div class="f-coppy">
-    <copy>© 2013-2016 </copy> &bull;
-    <span>ALL RIGHTS RESERVED. GAMEAGEVENTURES LLP</span>
+    <copy>© 2016 dotaviewer</copy>
+    <p>Dota 2 is a registered trademark of Valve Corporation. This site is not affiliated with Valve Corporation.<br>
+All game images and names are property of Valve Corporation. Game info updated with Steam API</p>
   </div>
 </footer>
     </div>
   </div>
-
-
-<a class="abg" href="/" target="_blank">
-	<u class="abg_wrap">
-		<span class="abg_top">
-			<span class="abg_md"><i>Матч дня</i></span>
-			<u class="abg_i1"><img src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/></u>
-			<u class="abg_i2"><img src="http://game-tournaments.com/media/logo/pic-20161110-300x300-2206743285.png"/></u>
-			<u class="kmob">
-				1.1 &uarr;  - 
-				2.1 &darr;
-			</u>
-			<span class="betMob">
-              <span class="abg_btn">Сделать ставку</span>
-              <span class="ggbet"></span>
-              <span class="ggbetT"></span>
-              <span class="ggbetT">ставки на<br>киберспорт<br>на лучших<br>условиях</span>
-		    </span>
-		</span>
-		<span class="abg_left">
-            <u>
-				<span class="abg_mp"><img src="http://game-tournaments.com/media/tournament/pic-20160309-280x80-3427731343.png"/></span>
-				<span class="abg_mt">The Summit 6<br>Playoff, Upper Bracket, Round 1</span>
-            </u>
-			<span class="abg_kf kf_up">1.73<b>коэффициент</b></span>
-			<span class="abg_t1">
-				<img src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png">
-				<b>Virtus.Pro</b>
-			</span>
-			<span class="abg_btn">Сделать ставку</span>
-			<span class="ggbet"></span>
-			<span class="ggbetT"></span>
-			<span class="ggbetT">ставки на<br>киберспорт<br>на лучших<br>условиях</span>
-		</span>
-        <span class="abg_right">
-			<u class="abg_game">
-				<span><img src="http://game-tournaments.com/html/img/logo-582.png"></span>
-				<b>Dota 2</b>
-			</u>
-			<span class="abg_day"><b>16</b>ноября<br>2016<br>21:00 MSK</span>
-			<span class="abg_kf">2.39<b>коэффициент</b></span>
-			<span class="abg_t2">
-				<img src="http://game-tournaments.com/media/logo/pic-20161110-300x300-2206743285.png">
-				<b>EHOME</b>
-			</span>
-			<span class="abg_btn">Сделать ставку</span>
-			<span class="ggbet"></span>
-			<span class="ggbetT">ставки на<br>киберспорт<br>на лучших<br>условиях</span>
-		</span>
-	</u>
-</a>
+  
 <!-- bar.html -->
 <div class="topbar">
   <span id="menu-toggle" class="opener"><i class="gti-bars"></i></span>
   
   <div class="barc">
-    <a href="#!" class="gt-logo"><img src="img/gt-logo.png" alt="Game-tournaments.com"></a>
+    <a href="/" class="dvLogo"><img src="img/logo.png" alt="dotaviewer.com"></a>
     
-    <div class="s-lang">
-      <div class="dropdown">
-        <a class="dla" id="ddlang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <div class="bread">
+      <ol id="breadcumbs" class="breadcrumb hidden-xs">
+        <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+          <a itemprop="url" href="/"><span itemprop="title">Главная</span></a>
+        </li>
+        <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+          <a title="Dota 2" itemprop="url" href="/dota-2"><span itemprop="title">Название матча</span></a>
+        </li>
+      </ol>
+    </div>
+    
+    <div class="sLang">
+      <div class="dropdown pull-right">
+        <a class="btn btn-border" id="ddlang" data-toggle="dropdown">
           RU
           <span class="caret"></span>
         </a>
@@ -135,6 +920,39 @@
 
   </div> 
 </div>
+
+<a class="abg" href="/" target="_blank">
+	<u class="abg_wrap">
+		<span class="abg_top">
+			<span class="abg_md"><i>Матч дня</i></span>
+			<u class="abg_i1">
+			  <img src="http://game-tournaments.com/media/logo/pic-20161110-600x600-7320131375.png"/>
+			  <b>Virtus.Pro</b>
+			</u>
+			<u class="abg_i2">
+			  <img src="http://game-tournaments.com/media/logo/pic-20161009-256x256-7743742014.png"/>
+			  <b>Horde</b>
+		    </u>
+			<u class="kmob">
+				1.1 &uarr;  - 
+				2.1 &darr;
+			</u>
+			
+		</span>
+		
+		<span class="dobet">
+          <span class="ggbet"></span>
+          <span class="abg_btn">Сделать ставку</span>
+          <span class="ggbetT">ставки на киберспорт на лучших условиях</span>
+        </span>
+        
+        <span class="abg_mt">
+          <b>Dota 2 Best of 2</b>
+          The Boston Major<br>
+          Open Qualifiersr<br>Europe #1, 1/4
+        </span>
+	</u>
+</a>
 
 <!-- Modal -->
 <div class="modal fade" id="stavka" tabindex="-1" role="dialog">
@@ -162,8 +980,6 @@
   </div>
 </div>
 
-
-<!-- -->
 
   <!-- Site Sripts -->
   <script src="/js/main.js"></script>
@@ -195,8 +1011,6 @@
     <a href="/fonts.html" class="m2 btn btn-sm btn-success">Ico</a>
   </div>
 </div>
-<!--PAGES navi-->
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script>
@@ -225,8 +1039,6 @@
 
 }(jQuery));
 </script>
-<!--.STYLE CHANGE-->
-<!--.PAGES navi-->
 
 </body>
 </html>

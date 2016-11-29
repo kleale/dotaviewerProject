@@ -13,7 +13,6 @@
 /*
 * Base css 
 */
-@import "part/base.css";
 @import "part/layout.css";
 @import "part/module.css";
 @import "part/theme.css";

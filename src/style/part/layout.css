@@ -1,21 +1,89 @@
 /*
   Layout
 */
+body{
+  background-color: #17100b;
+  color: $text-main;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  position: relative;
+}
+.dotaBg{
+  background-image: url(../img/topgradient.png);
+  background-repeat: repeat-x;
+  background-color: #17100b;
+  
+  .mainwrap{
+    background-image: url(../img/dotaBgL.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    
+    min-height: 1000px;
+  }
+}
+
+a{
+  transition: $tease;
+  color: $link-red;
+  
+  &:active,
+  &:focus,
+  &:hover{
+    color: $link-red-active;
+    text-decoration: underline;
+  } 
+}
 
 .mainwrap{
-  padding-top: 120px;
+  padding-top: 180px;
   position: relative;
 }
 .otstup{
   position: relative;
   z-index: 2;
 }
+
 /*
-  Breadcrums Bar
+  TopBar
+*/
+.topbar{
+  background-color: #000;
+  background-image: url(../img/topbg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  position: fixed 0 0 * 0;
+  z-index: 100;
+  box-shadow: 0 0 1px #000;
+  
+  .opener{
+    display: none;
+  }
+  .barc{
+    .dvLogo{
+      display: block;
+      width: 180px;
+      float: left;
+      margin: 5px;
+
+      img{
+        width: 100%;
+      }
+    }
+    .sLang{
+      float: right;
+      margin: 9px;
+    }
+  }
+}
+
+
+
+/*
+  Breadcrums
 */
 .bread{
-  position: absolute 0 * * *;
-  z-index: 2;
+    float: left;
+    margin: 11px 10px 7px 10px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.61);
   
   ol{
     display: inline-block;
@@ -24,25 +92,27 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     padding: 5px 10px;
-    background: #035880;
+    margin: 0;
     
     li {
       display: inline-block;
     
       a {
-        font-size: 12px;
-        color: $link-light-blue;
+        font-size: 11px;
+        font-weight: bold;
+        color: $link-red;
         text-decoration: none;
+        text-transform: uppercase;
         
         &:active,
         &:focus,
         &:hover{
           text-decoration: none;
-          color: $link-light-blue-active;
+          color: $link-red-active;
         }
       }
     }
-  }
+  } 
 }
 
 
@@ -51,34 +121,23 @@
 */
 
 footer{
-  color: $text-gray-3;
-  font-size: 12px;
-  padding: 20px 15px;
-  overflow: hidden;
-  text-transform: uppercase;
-  background: $body-bg;
-    
-  @media (max-width: $XM) {
-    text-align: center;
-  }
-  @media (max-width: 1599px) {
-    font-size: 11px;
-  }
+  color: #5b4937;
+  font-size: 11px;
+  text-align: center;
+  position: absolute* 0 0 0;
   
   .f-coppy{
-    float: left;
-    padding: 5px 0;
-    
-    @media (max-width: $XM) {
-      float: none;
-    }
-  
+    padding: 15px 0;
     copy{
-      margin-right: 10px;
-      display: inline-block;
+      display: block;
+      color: #f05020;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 5px;
+      font-weight: bold;
     }
-    span{
-      margin-left: 10px;
+    p{
+      display: block;
     }
   }
   

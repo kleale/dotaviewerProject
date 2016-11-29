@@ -84,8 +84,8 @@
 
 
 .nav-pager{
-  text-align: right;
-  border-top: 1px solid #4d5963;
+  text-align: center;
+  border-top: 1px solid #46392f;
   margin-bottom: 10px;
   
   .pagination{
@@ -95,16 +95,16 @@
     li{
       &.active{
         a{
-          background: #424f5a;
-          border-color: #424f5a;
+          background: #46392f;
+          border-color: #46392f;
           box-shadow: 3px 2px 0 2px rgba(0, 0, 0, 0.18);
           height: 35px;
           padding: 10px 0 0;
         }
       }
       a{
-        background: #454a4e;
-        color:$link-light-blue;
+        background: #271e17;
+        color: #d1c0af;
         border-radius: 0px;
         border: 1px solid rgba(3, 105, 153, 0);
         padding: 8px 0 0;
@@ -119,8 +119,8 @@
         &:active,
         &:hover,
         &:focus{
-          background: #424f5a;
-          border-color: #424f5a;
+          background: #46392f;
+          border-color: #46392f;
           transform: skew(-5deg);
         }
       }
@@ -129,17 +129,6 @@
         color:$link-light-blue;
         border-radius: 50px;
       }
-      /*
-      &.prr{
-        a{
-          padding: 4px 0;
-          width: 24px;
-          margin: 4px 2px;
-          display: inline-block;
-          height: 24px;
-        }
-      }
-      */
     }
   }
   
