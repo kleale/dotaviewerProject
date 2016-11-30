@@ -182,7 +182,67 @@ Branding - Match of the day
   
 }
 
+@media (max-width: 990px) {
+  .abg {
+      top: 50px;
+    .abg_wrap {
+      .abg_top {
+        height: 75px;
+        margin: 50px auto;
+        max-width: 350px;
+        
+        .abg_md{
+          width: 60px;
+          height: 42px;
+          margin-left: -30px;
+          i{
+            bottom: 0px;
+          }
+        }
+        .abg_i1,.abg_i2 {
+          top: -3px;
+          img{
+            height: 40px;
+          }
+        }
+        .kmob{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .abg_mt {
+    max-width: 50%;
+    text-align: right;
+    top: 10px;
+    font-size: 8px;
+    right: 80%;
+    
+    b {
+      font-size: 9px;
+    }
+  }
+  .dobet {
+    top: -21px;
+    right: auto;
+    left: 80%;
+  }
+}
 
+
+@media (max-width: 580px) {
+  .dobet{
+    display: none;
+  }
+  .abg_mt {
+    text-align: center;
+    width: 100%;
+    top: -30px;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+  }
+}
 
 
 
