@@ -1,3 +1,431 @@
 /*
   Page styles
 */
+
+.matchWrap{
+  padding: 50px 0 0 0;
+  overflow: hidden;
+  
+  .frameblock{
+    position: fixed 0 35% 0 0;
+    height: 100%;
+    z-index: 2;
+    
+    .frame{
+      position: absolute 0 0 120px 0;
+
+      iframe{
+        z-index: 2;
+        position: relative;
+      }
+    }
+    .frameBottom{
+      position: absolute 100% 0 0 0;
+      height: 120px;
+      margin-top: -120px;
+    }
+  }
+  footer{
+    width: auto;
+    position: absolute 100% 0 0 65%;
+    margin-top: -100px;
+  }
+}
+
+
+.log{
+  min-height: 780px;
+  float: left;
+  width: 35%;
+  margin-left: 65%;
+  position: relative;
+  padding: 10px 0 0 0;
+  font-size: 12px;
+  background-image: url(../img/topgradient.png);
+  background-repeat: repeat-x;
+  background-color: #17100b;
+  background-attachment: fixed;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1px;
+    background: #4c3c31;
+    top: 30px;
+    bottom: 5px;
+    margin-left: 83px;
+  }
+  .table{
+    margin-bottom: 0; 
+  }
+  .table>tbody>tr>td{
+    border: 0;
+    padding: 3px 5px;
+  }
+  .table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+    background: rgba(21, 14, 10, 0.55);
+  }
+  
+  .time{
+    padding-top:8px;
+    text-align:right;
+    width:65px;
+    position: relative;
+    vertical-align: middle;
+    
+    &.timeProgres{
+      line-height:12px; 
+      padding-top:7px; 
+      text-align:right; 
+      width:65px;
+      vertical-align: top;
+      
+      .text-muted{
+        opacity: .7;
+      }
+    }
+  }
+  
+  tr:hover,
+  tr.active{
+    background: rgba(21, 14, 10, 0.45);
+    
+    .time:before{
+      content:'';
+      font-family: "gticons";
+      position: absolute;
+      left: 5px;
+      font-size: 13px;
+      top: 8px;
+    }
+  }
+  tr:hover{
+    .time:before{
+      opacity: .3;
+    }
+  }
+  
+  .event{
+    position:relative;
+    padding-top:8px;
+    vertical-align: middle;
+    
+    img {
+      height: 22px;
+      margin-right: 5px;
+      box-shadow: 0 0 0 1px #211a17;
+      border-radius: 1px;
+    }
+    
+    .progress{
+      position: absolute;
+      top: 25px;
+      left: 5px;
+      height: 4px;
+      width: 40px;
+      border-radius: 0;
+    }
+    
+    .fightTable{
+      position:relative;
+      margin:1px 0 5px 0;
+      background: #29211e;
+      text-align: right;
+      
+      &.table>tbody>tr>td, &.table>tbody>tr>th, &.table>tfoot>tr>td, &.table>tfoot>tr>th, &.table>thead>tr>td, &.table>thead>tr>th{
+        border-top: 0;
+        border-bottom:0;
+        text-align: right;
+        vertical-align: middle;
+        
+        &:first-child{
+          text-align: left;
+        }
+      }
+      &.table>thead>tr>th{
+        color: #f05020;
+        font-weight: 400;
+      }
+      &.table>thead>tr{
+        background: #19120e;
+      }
+      
+      .krest{
+        position:absolute; 
+        left:-18px; 
+        width:40px; 
+        margin-top:14px; 
+        font-size:12px; 
+        text-align:right; 
+        color:red
+      }
+      
+    }
+  }
+  .log-type {
+    width: 35px;
+    
+    img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 0 0 1px #211a17;
+    }
+  }
+}
+
+abbr {
+  border-bottom: 1px dashed #f05020 !important;
+  text-decoration: none !important;
+}
+
+
+
+.mban{
+  color: #fff;
+  line-height: 1;
+  position: relative;
+  display: block;
+  z-index: 1;
+  background: url(/img/topLight.png) no-repeat 50% 0;
+  
+  &:hover,
+  &:active,
+  &:focus{
+    color: #fff;
+  }
+
+  .abg_wrap {
+    position: relative;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+
+    @media (max-width: 1599px) {
+      max-width: 980px;
+    }
+
+    .abg_top {
+      position: relative;
+      max-width: 500px;
+      height: 120px;
+      display: block;
+      margin: 0 auto;
+      
+      .abg_md {
+        width: 100px;
+        height: 73px;
+        background: url(/img/mday.png) no-repeat 50% 50%;
+        background-size: cover;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        margin-left: -50px;
+        z-index: 2;
+        
+        i {
+          position: absolute;
+          bottom: 4px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-style: normal;
+          text-transform: uppercase;
+          font-size: 10px;
+          white-space: nowrap;
+        }
+      } /*abg_md*/
+      
+      .abg_i1, .abg_i2 {
+        width: 110px;
+        height: 70px;
+        position: absolute;
+        top: 10px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 5px;
+        
+        b{
+          text-transform: uppercase;
+          display: block;
+          padding-top: 5px;
+        }
+        
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: url(/img/tp1.png) no-repeat 50% 50%;
+            display: block;
+            width: 295px;
+            height: 200px;
+            margin: -100px -146px;
+            opacity: .4;
+            transition: all .3s linear;
+        }
+        img{
+          height: 70px;
+          max-width: 110px;
+          position: relative;
+          z-index: 2;
+        }
+      }
+      .abg_i1 {
+          left: 0px;
+      }
+      .abg_i2 {
+        right: 0px;
+        
+        &:before {
+            background: url(/img/tp2.png) no-repeat 50% 50%;
+        }
+      }
+      
+      .kmob{
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        width: 140px;
+        text-align: center;
+        margin-left: -70px;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 20px;
+      }
+    } /*abg_top*/
+  } /*abg_wrap*/
+}
+
+.dobet{
+    padding: 5px;
+    position: absolute;
+    float: right;
+    top: 10px;
+    right: 10px;
+    border: 1px dAShed #866448;
+    text-align: center;
+    width: 140px;
+    border-radius: 3px;
+  
+  .abg_btn {
+    display: inline-block;
+    background: url(/img/btnbg.png) no-repeat 50% 50%;
+    background-size: cover;
+    width: 128px;
+    height: 40px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.48);
+    color: #ffffff;
+    transition: all .3s linear;
+    margin-top: -10px;
+  }
+  .ggbet {
+    display: inline-block;
+    background: url(/img/bets_gg.png) no-repeat 50% 50%;
+    background-size: cover;
+    width: 80px;
+    height: 34px;
+  }
+  .ggbetT {
+    display: inline-block;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    color: #f9f7c6;
+    text-shadow: 0 3px 5px #333;
+    line-height: 1;
+  }
+}
+
+.abg_mt{
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 32px;
+  font-weight: bold;
+  text-align: right;
+  max-width: 170px;
+  
+  b{
+    font-size: 14px;
+    display: block;
+  }
+  
+}
+
+@media (max-width: 990px) {
+  .abg {
+      top: 50px;
+    .abg_wrap {
+      .abg_top {
+        height: 75px;
+        margin: 50px auto;
+        max-width: 350px;
+        
+        .abg_md{
+          width: 60px;
+          height: 42px;
+          margin-left: -30px;
+          i{
+            bottom: 0px;
+          }
+        }
+        .abg_i1,.abg_i2 {
+          top: -3px;
+          img{
+            height: 40px;
+          }
+        }
+        .kmob{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .abg_mt {
+    max-width: 50%;
+    text-align: right;
+    top: 10px;
+    font-size: 8px;
+    right: 80%;
+    
+    b {
+      font-size: 9px;
+    }
+  }
+  .dobet {
+    top: -21px;
+    right: auto;
+    left: 80%;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .abg{
+    .dobet{
+      display: none;
+    }
+    .abg_mt {
+      text-align: center;
+      width: 100%;
+      top: -30px;
+      left: 0;
+      right: 0;
+      max-width: 100%;
+    }
+  }
+}
+  

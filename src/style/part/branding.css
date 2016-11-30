@@ -231,16 +231,18 @@ Branding - Match of the day
 
 
 @media (max-width: 580px) {
-  .dobet{
-    display: none;
-  }
-  .abg_mt {
-    text-align: center;
-    width: 100%;
-    top: -30px;
-    left: 0;
-    right: 0;
-    max-width: 100%;
+  .abg{
+    .dobet{
+      display: none;
+    }
+    .abg_mt {
+      text-align: center;
+      width: 100%;
+      top: -30px;
+      left: 0;
+      right: 0;
+      max-width: 100%;
+    }
   }
 }
 

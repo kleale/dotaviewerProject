@@ -1,0 +1,33 @@
+{% set title = "Match" %}
+
+<!DOCTYPE html>
+<html>
+{% include "template/head.html" %}
+<body class="dotaBg">  
+  <div class="matchWrap">
+    
+    <div id="b1" class="frameblock">
+      <div class="frame">
+        <iframe id="ytplayer" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/ukg49m8fFis?enablejsapi=1&amp;origin=http%3A%2F%2Fteam-hunter.com&amp;widgetid=1"></iframe>
+        <div id="wardmap2"><div id="ward_layer_modal"></div></div>
+      </div>
+      <div class="frameBottom">
+        {% include "template/part/match-banner.html" %}
+      </div>
+    </div>
+      
+    <div id="b2" class="log">
+      {% include "template/part/log.html" %}
+    </div>
+    
+    
+    {% include "template/footer.html" %}
+    
+  </div>
+  
+{% include "template/bar.html" %}
+{% include "template/modal.html" %}
+{% include "template/scripts.html" %}
+
+</body>
+</html>
