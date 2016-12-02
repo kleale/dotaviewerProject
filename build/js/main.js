@@ -84,7 +84,16 @@ responsive:!0,responsiveRefreshRate:200,responsiveBaseWidth:g,baseClass:"owl-car
       $(".bar").toggleClass("hiddenbar");
 	});
     
-
+    $(window).scroll(function() {
+      var wbh = $('#ytplayer').parent().offset().top - 50;
+      if (wbh-$(window).scrollTop() <= 0) {
+        $('#b1').addClass('fix');
+      }
+      else {
+        $('#b1').removeClass('fix');
+      }
+    });
+    
     //tip
     $('.tip').tooltip();
     

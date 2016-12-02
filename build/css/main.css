@@ -506,7 +506,7 @@ body{
   background-color: #17100b;
 }
 .dotaBg .mainwrap{
-  background-image: url(../img/dotaBgL.jpg);
+  background-image: url(../img/dotabgl.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   min-height: 1000px;
@@ -523,6 +523,7 @@ a:active,
 }
 .mainwrap{
   padding-top: 180px;
+  padding-bottom: 110px;
   position: relative;
 }
 .otstup{
@@ -1260,7 +1261,7 @@ Branding - Match of the day
 .abg .abg_wrap .abg_top .abg_md {
   width: 100px;
   height: 73px;
-  background: url(/img/mday.png) no-repeat 50% 50%;
+  background: url(../img/mday.png) no-repeat 50% 50%;
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -1300,7 +1301,7 @@ Branding - Match of the day
   position: absolute;
   top: 50%;
   left: 50%;
-  background: url(/img/tp1.png) no-repeat 50% 50%;
+  background: url(../img/tp1.png) no-repeat 50% 50%;
   display: block;
   width: 295px;
   height: 200px;
@@ -1321,7 +1322,7 @@ Branding - Match of the day
   right: 0px;
 }
 .abg .abg_wrap .abg_top .abg_i2:before {
-  background: url(/img/tp2.png) no-repeat 50% 50%;
+  background: url(../img/tp2.png) no-repeat 50% 50%;
 }
 .abg .abg_wrap .abg_top .kmob{
   position: absolute;
@@ -1347,7 +1348,7 @@ Branding - Match of the day
 }
 .dobet .abg_btn {
   display: inline-block;
-  background: url(/img/btnbg.png) no-repeat 50% 50%;
+  background: url(../img/btnbg.png) no-repeat 50% 50%;
   background-size: cover;
   width: 128px;
   height: 40px;
@@ -1364,7 +1365,7 @@ Branding - Match of the day
 }
 .dobet .ggbet {
   display: inline-block;
-  background: url(/img/bets_gg.png) no-repeat 50% 50%;
+  background: url(../img/bets_gg.png) no-repeat 50% 50%;
   background-size: cover;
   width: 80px;
   height: 34px;
@@ -1380,7 +1381,7 @@ Branding - Match of the day
   line-height: 1;
 }
 .abg_mt{
-  color: #fff;
+  color: #d1c0af;
   text-transform: uppercase;
   position: absolute;
   left: 0;
@@ -2252,19 +2253,13 @@ Branding - Match of the day
   .mtable .mItem .tdInfo .flag img{
     width: 14px;
   }
-  .mtable .mItem .tdInfo .flag.f1{
-    float:left;
-  }
-  .mtable .mItem .tdInfo .flag.f2{
-    float:right;
-  }
 }
 /*match page*/
 /*
   Page styles
 */
 .matchWrap{
-  padding: 50px 0 0 0;
+  padding: 50px 0 120px 0;
   overflow: hidden;
 }
 .matchWrap .frameblock{
@@ -2274,12 +2269,12 @@ Branding - Match of the day
   left: 0;
   position: fixed;
   height: 100%;
-  z-index: 2;
+  z-index: 4;
 }
 .matchWrap .frameblock .frame{
-  top: 0;
+  top: 123px;
   right: 0;
-  bottom: 120px;
+  bottom: 185px;
   left: 0;
   position: absolute;
 }
@@ -2287,16 +2282,89 @@ Branding - Match of the day
   z-index: 2;
   position: relative;
 }
+.matchWrap .frameblock .frameTop{
+  top: 53px;
+  right: 0;
+  left: 0;
+  position: absolute;
+  height: 70px;
+  background: #000 url(../img/frametop.jpg) no-repeat 0 0;
+  overflow: hidden;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.41);
+}
+.matchWrap .frameblock .frameTop .row{
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+.matchWrap .frameblock .frameTop .row > div{
+  display: table-cell;
+  height: 70px;
+  vertical-align: middle;
+  float: none;
+  line-height: 1;
+}
+.matchWrap .frameblock .frameTop .row > div:nth-child(1){
+  width: 30%;
+}
+.matchWrap .frameblock .frameTop .row > div:nth-child(2){
+  text-align: center;
+}
+.matchWrap .frameblock .frameTop .row > div:nth-child(3){
+  text-align: right;
+  width: 30%;
+}
+.matchWrap .frameblock .frameTop .row > div i{
+  font-size: 24px;
+  margin: -2px 0;
+  display: inline-block;
+  vertical-align: bottom;
+  position: absolute;
+}
+.matchWrap .frameblock .frameTop .row > div >b{
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-left: 30px;
+  display: inline-block;
+}
+.matchWrap .frameblock .frameTop .row > div h1{
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 10px 0;
+  padding: 0;
+  color: #f05020;
+}
+.matchWrap .frameblock .frameTop .row > div h1 span{
+  padding: 0 20px;
+  color: #fff;
+}
+.matchWrap .frameblock .frameTop .row > div >u{
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.matchWrap .frameblock .frameTop .row > div .mdrop{
+  width: 100px;
+}
+.matchWrap .frameblock .frameTop .row > div .mdrop span{
+  overflow: hidden;
+  display: inline-block;
+  margin-right: -20px;
+}
 .matchWrap .frameblock .frameBottom{
   top: 100%;
   right: 0;
   bottom: 0;
   left: 0;
   position: absolute;
-  height: 120px;
-  margin-top: -120px;
+  height: 185px;
+  margin-top: -185px;
+  background: #29211e;
+  overflow: hidden;
 }
-.matchWrap footer{
+.pageMatch footer{
   width: auto;
   top: 100%;
   right: 0;
@@ -2304,6 +2372,8 @@ Branding - Match of the day
   left: 65%;
   position: absolute;
   margin-top: -100px;
+  background: #000;
+  height: 120px;
 }
 .log{
   min-height: 780px;
@@ -2339,15 +2409,15 @@ Branding - Match of the day
   background: rgba(21, 14, 10, 0.55);
 }
 .log .time{
-  padding-top:8px;
+  padding-top:8px!important;
   text-align:right;
   width:65px;
   position: relative;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .log .time.timeProgres{
   line-height:12px;
-  padding-top:7px;
+  padding-top:6px !important;
   text-align:right;
   width:65px;
   vertical-align: top;
@@ -2392,7 +2462,7 @@ Branding - Match of the day
 .log .event .fightTable{
   position:relative;
   margin:1px 0 5px 0;
-  background: #29211e;
+  background: transparent;
   text-align: right;
 }
 .log .event .fightTable.table>tbody>tr>td, .log .event .fightTable.table>tbody>tr>th, .log .event .fightTable.table>tfoot>tr>td, .log .event .fightTable.table>tfoot>tr>th, .log .event .fightTable.table>thead>tr>td, .log .event .fightTable.table>thead>tr>th{
@@ -2400,6 +2470,7 @@ Branding - Match of the day
   border-bottom:0;
   text-align: right;
   vertical-align: middle;
+  padding: 5px 5px;
 }
 .log .event .fightTable.table>tbody>tr>td:first-child,.log .event .fightTable.table>tbody>tr>th:first-child,.log .event .fightTable.table>tfoot>tr>td:first-child,.log .event .fightTable.table>tfoot>tr>th:first-child,.log .event .fightTable.table>thead>tr>td:first-child,.log .event .fightTable.table>thead>tr>th:first-child{
   text-align: left;
@@ -2409,11 +2480,11 @@ Branding - Match of the day
   font-weight: 400;
 }
 .log .event .fightTable.table>thead>tr{
-  background: #19120e;
+  background: rgba(64, 53, 47, 0.38);
 }
 .log .event .fightTable .krest{
   position:absolute;
-  left:-18px;
+  left:-42px;
   width:40px;
   margin-top:14px;
   font-size:12px;
@@ -2435,14 +2506,279 @@ abbr {
   border-bottom: 1px dashed #f05020 !important;
   text-decoration: none !important;
 }
+.dead img {
+    filter: grayscale(1);
+    opacity: 0.8;
+}
+@media (max-width: 1100px) {
+  .matchWrap .frameblock{
+    right: 40%;
+  }
+  .matchWrap .log{
+    width: 40%;
+    margin-left: 60%;
+  }
+  .matchWrap .log .time{
+    width: 45px;
+  }
+  .matchWrap .log .time.timeProgres{
+    width: 45px;
+  }
+  .matchWrap .log tr:hover .time:before, 
+      .matchWrap .log tr.active .time:before{
+    left: 2px;
+    font-size: 9px;
+    top: 20px;
+  }
+}
+/*
+ONLY portrait orientation
+*/
+@media (max-device-width: 960px) and (orientation : portrait){
+  .matchWrap .frameblock{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    margin-top: 0px;
+  }
+  .matchWrap .frameblock .frameTop{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: relative;
+  }
+  .matchWrap .frameblock .frame{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    height: 550px;
+  }
+  .matchWrap .frameblock .frameBottom{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    margin: 0;
+  }
+  .matchWrap .frameblock .frameBottom .btn-group-lg>.btn, .matchWrap .frameblock .frameBottom .btn-lg {
+    padding: 5px 8px;
+    font-size: 15px;
+  }
+  .matchWrap .log{
+    float: none;
+    margin: 0;
+    width: auto;
+    padding: 15px;
+  }
+  .pageMatch footer {
+    width: auto;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin-top: -120px;
+    background: #000;
+    height: 120px;
+  }
+  
+  /*player fix*/
+  .fix{
+    z-index: 10;
+    position: relative;
+  }
+  .fix #ytplayer{
+    top: 50px!important;
+    right: 0!important;
+    left: 0!important;
+    position: fixed!important;
+    height: 450px;
+    z-index: 10;
+  }
+}
+@media (max-width: 800px)  and (orientation : portrait){
+   .matchWrap .frameblock{
+    height: auto;
+  }
+   .matchWrap .frameblock .frameTop {
+    height: auto;
+    padding: 10px 0;
+  }
+   .matchWrap .frameblock .frameTop .row{
+    display: block;
+  }
+   .matchWrap .frameblock .frameTop .row >div{
+    display: block;
+    height: auto;
+    vertical-align: middle;
+    float: none;
+    width: 100%!important;
+    text-align: center!important;
+  }
+   .matchWrap .frameblock .frameTop .row >div i {
+    font-size: 18px;
+    margin: 0;
+  }
+   .matchWrap .frameblock .frameTop .row >div h1{
+    font-size: 16px;
+    margin: 5px 0;
+  }
+   .matchWrap .frameblock .frameTop .row >div b {
+    font-size: 11px;
+  }
+   .matchWrap .frameblock .frame{
+    height: 450px;
+  }
+}
+@media (max-width: 700px)  and (orientation : portrait){
+   .matchWrap .frameblock .frame{
+    height: 400px;
+  }
+}
+@media (max-width: 600px)  and (orientation : portrait){
+   .matchWrap .frameblock .frame{
+    height: 300px;
+  }
+   .matchWrap .log{
+    padding: 15px 5px;
+  }
+   .matchWrap .log .event .fightTable{
+    font-size: 11px;
+  }
+   .matchWrap .log .event .fightTable td,
+          .matchWrap .log .event .fightTable th{
+    padding: 5px 2px!important;
+  }
+}
+@media (max-width: 500px)  and (orientation : portrait){
+  .matchWrap .frameblock .frame{
+    height: 250px;
+  }
+  .matchWrap .fix #ytplayer{
+    height: 240px;
+  }
+}
+@media (max-width: 400px)  and (orientation : portrait){
+  .matchWrap .frameblock .frame{
+    height: 200px;
+  }
+  .matchWrap .fix #ytplayer{
+    height: 120px;
+  }
+}
+@media (max-width: 375px)  and (orientation : portrait){
+   .matchWrap .frameblock .frame{
+    height: 200px;
+  }
+   .matchWrap .fix #ytplayer{
+    height: 200px;
+  }
+}
+@media (max-width: 321px) and (orientation : portrait){
+   .matchWrap .frameblock .frame{
+    height: 180px;
+  }
+   .matchWrap .fix #ytplayer{
+    height: 180px;
+  }
+}
+/*
+ONLY landscape orientation
+*/
+@media (max-width: 736px) and (orientation : landscape){
+  .mban{
+    display: none !important;
+  }
+  .matchWrap .frameblock .frameTop{
+    height: 40px;
+  }
+  .matchWrap .frameblock .frameTop .row > div{
+    height: 40px;
+  }
+  .matchWrap .frameblock .frameTop .row > div i{
+    font-size: 16px;
+    margin: 1px 0;
+  }
+  .matchWrap .frameblock .frameTop .row > div b{
+    font-size: 10px;
+    margin-left: 23px;
+  }
+  .matchWrap .frameblock .frameTop .row > div h1{
+    font-size: 13px;
+  }
+  .matchWrap .frameblock .frameTop .row > div h1 span{
+    padding: 0 5px;
+  }
+  .matchWrap .frameblock .frameTop .row > div u{
+    font-size: 10px;
+  }
+  .matchWrap .frameblock .frame{
+    bottom: 45px;
+    top: 93px;
+  }
+  .matchWrap .frameblock .frameBottom{
+    height: 40px;
+    margin-top: -45px;
+    overflow: visible;
+  }
+  .matchWrap .log{
+    font-size: 10px;/*event*/
+  }
+  .matchWrap .log:before{
+    margin-left: 53px;
+  }
+  .matchWrap .log .time{
+    padding-top: 6px!important;
+  }
+  .matchWrap .log .log-type {
+    width: 30px;
+  }
+  .matchWrap .log .log-type img{
+    width: 20px;
+    height: 20px;
+  }
+  .matchWrap .log tr:hover .time:before, 
+      .matchWrap .log tr.active .time:before {
+    left: 1px;
+    font-size: 8px;
+    top: 8px;
+  }
+  .matchWrap .log .event img {
+    height: 17px;
+  }
+  .matchWrap .log .event .fightTable.table>tbody>tr>td, .matchWrap .log .event .fightTable.table>tbody>tr>th, .matchWrap .log .event .fightTable.table>tfoot>tr>td, .matchWrap .log .event .fightTable.table>tfoot>tr>th, .matchWrap .log .event .fightTable.table>thead>tr>td, .matchWrap .log .event .fightTable.table>thead>tr>th{
+    padding: 4px 2px;
+  }
+  .matchWrap .log .event .fightTable .krest {
+    width: 30px;
+    left: -35px;
+    margin-top: 8px;
+  }
+  .matchWrap .log .event .progress {
+    width: 30px;
+  }
+}
+/*
+match-banner.css
+match-banner.html
+*/
 .mban{
   color: #fff;
   line-height: 1;
   position: relative;
   display: block;
   z-index: 1;
-  background: url(/img/topLight.png) no-repeat 50% 0; /*abg_wrap*/
+
 }
+/*
+  background: url(/img/topLight.png) no-repeat 50% 0;
+  */
 .mban:hover,
   .mban:active,
   .mban:focus{
@@ -2469,7 +2805,7 @@ abbr {
 .mban .abg_wrap .abg_top .abg_md {
   width: 100px;
   height: 73px;
-  background: url(/img/mday.png) no-repeat 50% 50%;
+  background: url(../img/mday.png) no-repeat 50% 50%;
   background-size: cover;
   position: absolute;
   top: 10px;
@@ -2509,7 +2845,7 @@ abbr {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: url(/img/tp1.png) no-repeat 50% 50%;
+  background: url(../img/tp1.png) no-repeat 50% 50%;
   display: block;
   width: 295px;
   height: 200px;
@@ -2530,7 +2866,7 @@ abbr {
   right: 0px;
 }
 .mban .abg_wrap .abg_top .abg_i2:before {
-  background: url(/img/tp2.png) no-repeat 50% 50%;
+  background: url(../img/tp2.png) no-repeat 50% 50%;
 }
 .mban .abg_wrap .abg_top .kmob{
   position: absolute;
@@ -2543,20 +2879,21 @@ abbr {
   font-weight: 800;
   font-size: 20px;
 }
-.dobet{
-    padding: 5px;
-    position: absolute;
-    float: right;
-    top: 10px;
-    right: 10px;
-    border: 1px dAShed #866448;
-    text-align: center;
-    width: 140px;
-    border-radius: 3px;
+/*abg_wrap*/
+.mban .dobet{
+  padding: 5px;
+  position: absolute;
+  float: right;
+  top: 10px;
+  right: 15px;
+  border: 1px dAShed #866448;
+  text-align: center;
+  width: 140px;
+  border-radius: 3px;
 }
-.dobet .abg_btn {
+.mban .dobet .abg_btn {
   display: inline-block;
-  background: url(/img/btnbg.png) no-repeat 50% 50%;
+  background: url(../img/btnbg.png) no-repeat 50% 50%;
   background-size: cover;
   width: 128px;
   height: 40px;
@@ -2571,14 +2908,14 @@ abbr {
   transition: all .3s linear;
   margin-top: -10px;
 }
-.dobet .ggbet {
+.mban .dobet .ggbet {
   display: inline-block;
-  background: url(/img/bets_gg.png) no-repeat 50% 50%;
+  background: url(../img/bets_gg.png) no-repeat 50% 50%;
   background-size: cover;
   width: 80px;
   height: 34px;
 }
-.dobet .ggbetT {
+.mban .dobet .ggbetT {
   display: inline-block;
   font-size: 9px;
   text-transform: uppercase;
@@ -2588,8 +2925,8 @@ abbr {
   text-shadow: 0 3px 5px #333;
   line-height: 1;
 }
-.abg_mt{
-  color: #fff;
+.mban .abg_mt{
+  color: #d1c0af;
   text-transform: uppercase;
   position: absolute;
   left: 0;
@@ -2597,59 +2934,69 @@ abbr {
   font-weight: 700;
   text-align: right;
   max-width: 170px;
-  
 }
-.abg_mt b{
+.mban .abg_mt b{
   font-size: 14px;
   display: block;
 }
-@media (max-width: 990px) {
-  .abg {
-      top: 50px;
+/*mban*/
+@media (max-width: 1300px) {
+  .mban {
+    top: -20px;
   }
-  .abg .abg_wrap .abg_top {
-    height: 75px;
-    margin: 50px auto;
+  .mban .abg_wrap .abg_top {
     max-width: 350px;
   }
-  .abg .abg_wrap .abg_top .abg_md{
+}
+@media (max-width: 1290px) {
+  .mban .abg_wrap .abg_top {
+    height: 75px;
+    margin: 60px auto 0;
+    max-width: 280px;
+  }
+  .mban .abg_wrap .abg_top .abg_md{
     width: 60px;
     height: 42px;
     margin-left: -30px;
-  }
-  .abg .abg_wrap .abg_top .abg_md i{
-    bottom: 0px;
-  }
-  .abg .abg_wrap .abg_top .abg_i1,.abg .abg_wrap .abg_top .abg_i2 {
     top: -3px;
   }
-  .abg .abg_wrap .abg_top .abg_i1 img,.abg .abg_wrap .abg_top .abg_i2 img{
+  .mban .abg_wrap .abg_top .abg_md i{
+    bottom: 0px;
+  }
+  .mban .abg_wrap .abg_top .abg_i1,.mban .abg_wrap .abg_top .abg_i2 {
+    top: -3px;
+    width: 70px;
+  }
+  .mban .abg_wrap .abg_top .abg_i1 img,.mban .abg_wrap .abg_top .abg_i2 img{
     height: 40px;
   }
-  .abg .abg_wrap .abg_top .kmob{
+  .mban .abg_wrap .abg_top .abg_i1 b,.mban .abg_wrap .abg_top .abg_i2 b{
+    font-size: 10px;
+  }
+  .mban .abg_wrap .abg_top .kmob{
     font-size: 16px;
   }
-  .abg_mt {
+  .mban .abg_mt {
     max-width: 50%;
     text-align: right;
     top: 10px;
     font-size: 8px;
     right: 80%;
   }
-  .abg_mt b {
+  .mban .abg_mt b {
     font-size: 9px;
   }
-  .dobet {
-    top: -21px;
-    right: auto;
-    left: 80%;
+  .mban .dobet {
+    top: -17px;
+    right: 15px;
+    left: auto;
   }
 }
 @media (max-width: 580px) {
-  .abg .dobet{
+  .mban .dobet{
     display: none;
   }
-  .abg .abg_mt {
+  .mban .abg_mt {
     text-align: center;
     width: 100%;
     top: -30px;

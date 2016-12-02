@@ -13,7 +13,7 @@ body{
   background-color: #17100b;
   
   .mainwrap{
-    background-image: url(../img/dotaBgL.jpg);
+    background-image: url(../img/dotabgl.jpg);
     background-repeat: no-repeat;
     background-position: 50% 0;
     
@@ -35,6 +35,7 @@ a{
 
 .mainwrap{
   padding-top: 180px;
+  padding-bottom: 110px;
   position: relative;
 }
 .otstup{

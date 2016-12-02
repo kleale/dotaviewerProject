@@ -1,13 +1,16 @@
 /*
-Branding - Match of the day
+match-banner.css
+match-banner.html
 */
-
-.abg {
-  position: absolute 40px 0 0 0;
+.mban{
   color: #fff;
   line-height: 1;
-  overflow: hidden;
+  position: relative;
+  display: block;
   z-index: 1;
+  /*
+  background: url(/img/topLight.png) no-repeat 50% 0;
+  */
   
   &:hover,
   &:active,
@@ -28,9 +31,9 @@ Branding - Match of the day
     .abg_top {
       position: relative;
       max-width: 500px;
-      height: 115px;
+      height: 120px;
       display: block;
-      margin: 20px auto;
+      margin: 0 auto;
       
       .abg_md {
         width: 100px;
@@ -38,7 +41,7 @@ Branding - Match of the day
         background: url(../img/mday.png) no-repeat 50% 50%;
         background-size: cover;
         position: absolute;
-        top: 0px;
+        top: 10px;
         left: 50%;
         margin-left: -50px;
         z-index: 2;
@@ -116,93 +119,110 @@ Branding - Match of the day
       }
     } /*abg_top*/
   } /*abg_wrap*/
-}
 
-.dobet{
-    padding: 5px;
+
+  .dobet{
+      padding: 5px;
+      position: absolute;
+      float: right;
+      top: 10px;
+      right: 15px;
+      border: 1px dAShed #866448;
+      text-align: center;
+      width: 140px;
+      border-radius: 3px;
+
+    .abg_btn {
+      display: inline-block;
+      background: url(../img/btnbg.png) no-repeat 50% 50%;
+      background-size: cover;
+      width: 128px;
+      height: 40px;
+      padding: 15px 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 10px;
+      text-align: center;
+      line-height: 1;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.48);
+      color: #ffffff;
+      transition: all .3s linear;
+      margin-top: -10px;
+    }
+    .ggbet {
+      display: inline-block;
+      background: url(../img/bets_gg.png) no-repeat 50% 50%;
+      background-size: cover;
+      width: 80px;
+      height: 34px;
+    }
+    .ggbetT {
+      display: inline-block;
+      font-size: 9px;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: 700;
+      color: #f9f7c6;
+      text-shadow: 0 3px 5px #333;
+      line-height: 1;
+    }
+  }
+
+  .abg_mt{
+    color: #d1c0af;
+    text-transform: uppercase;
     position: absolute;
-    float: right;
-    top: 20px;
-    right: 0;
-    border: 1px dAShed #866448;
-    text-align: center;
-    width: 140px;
-    border-radius: 3px;
+    left: 0;
+    top: 32px;
+    font-weight: bold;
+    text-align: right;
+    max-width: 170px;
+
+    b{
+      font-size: 14px;
+      display: block;
+    }
+
+  }
+
+} /*mban*/
   
-  .abg_btn {
-    display: inline-block;
-    background: url(../img/btnbg.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 128px;
-    height: 40px;
-    padding: 15px 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 10px;
-    text-align: center;
-    line-height: 1;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.48);
-    color: #ffffff;
-    transition: all .3s linear;
-    margin-top: -10px;
-  }
-  .ggbet {
-    display: inline-block;
-    background: url(../img/bets_gg.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 80px;
-    height: 34px;
-  }
-  .ggbetT {
-    display: inline-block;
-    font-size: 9px;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    color: #f9f7c6;
-    text-shadow: 0 3px 5px #333;
-    line-height: 1;
+@media (max-width: 1300px) {
+  .mban {
+    top: -20px;
+    .abg_wrap {
+      .abg_top {
+        max-width: 350px;
+      }
+    }
   }
 }
 
-.abg_mt{
-  color: #d1c0af;
-  text-transform: uppercase;
-  position: absolute;
-  left: 0;
-  top: 32px;
-  font-weight: bold;
-  text-align: right;
-  max-width: 170px;
-  
-  b{
-    font-size: 14px;
-    display: block;
-  }
-  
-}
-
-@media (max-width: 990px) {
-  .abg {
-      top: 50px;
+@media (max-width: 1290px) {
+  .mban {
     .abg_wrap {
       .abg_top {
         height: 75px;
-        margin: 50px auto;
-        max-width: 350px;
+        margin: 60px auto 0;
+        max-width: 280px;
         
         .abg_md{
           width: 60px;
           height: 42px;
           margin-left: -30px;
+          top: -3px;
           i{
             bottom: 0px;
           }
         }
         .abg_i1,.abg_i2 {
           top: -3px;
+          width: 70px;
           img{
             height: 40px;
+          }
+          b{
+            font-size: 10px;
           }
         }
         .kmob{
@@ -210,28 +230,28 @@ Branding - Match of the day
         }
       }
     }
-  }
-  .abg_mt {
-    max-width: 50%;
-    text-align: right;
-    top: 10px;
-    font-size: 8px;
-    right: 80%;
-    
-    b {
-      font-size: 9px;
+    .abg_mt {
+      max-width: 50%;
+      text-align: right;
+      top: 10px;
+      font-size: 8px;
+      right: 80%;
+
+      b {
+        font-size: 9px;
+      }
     }
-  }
-  .dobet {
-    top: -21px;
-    right: auto;
-    left: 80%;
+    .dobet {
+      top: -17px;
+      right: 15px;
+      left: auto;
+    }
   }
 }
 
 
 @media (max-width: 580px) {
-  .abg{
+  .mban{
     .dobet{
       display: none;
     }
@@ -245,8 +265,4 @@ Branding - Match of the day
     }
   }
 }
-
-
-
-
-
+  

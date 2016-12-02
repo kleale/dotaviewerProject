@@ -3,35 +3,116 @@
 */
 
 .matchWrap{
-  padding: 50px 0 0 0;
+  padding: 50px 0 120px 0;
   overflow: hidden;
   
   .frameblock{
     position: fixed 0 35% 0 0;
     height: 100%;
-    z-index: 2;
+    z-index: 4;
     
     .frame{
-      position: absolute 0 0 120px 0;
+      position: absolute 123px 0 185px 0;
 
       iframe{
         z-index: 2;
         position: relative;
       }
     }
+    .frameTop{
+      position: absolute 53px 0 * 0;
+      height: 70px;
+      background: #000 url(../img/frametop.jpg) no-repeat 0 0;
+      overflow: hidden;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.41);
+      
+      .row{
+        display: table;
+        width: 100%;
+        margin: 0;
+        
+        > div{
+          display: table-cell;
+          height: 70px;
+          vertical-align: middle;
+          float: none;
+          line-height: 1;
+          
+          &:nth-child(1){
+            width: 30%;
+          }
+          &:nth-child(2){
+            text-align: center;
+          }
+          &:nth-child(3){
+            text-align: right;
+            width: 30%;
+          }
+          i{
+            font-size: 24px;
+            margin: -2px 0;
+            display: inline-block;
+            vertical-align: bottom;
+            position: absolute;
+          }
+          >b{
+            text-transform: uppercase;
+            font-size: 13px;
+            margin-left: 30px;
+            display: inline-block;
+          }
+          h1{
+            display: inline-block;
+            font-size: 21px;
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 0;
+            color: #f05020;
+            span{
+              padding: 0 20px;
+              color: #fff;
+            }
+          }
+          >u{
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          
+          .mdrop{
+            width: 100px;
+            span{
+              overflow: hidden;
+              display: inline-block;
+              margin-right: -20px;
+              
+            }
+          }
+          
+        }
+      }
+    }
     .frameBottom{
       position: absolute 100% 0 0 0;
-      height: 120px;
-      margin-top: -120px;
+      height: 185px;
+      margin-top: -185px;
+      background: #29211e;
+      overflow: hidden;
     }
   }
+}
+
+.pageMatch{
   footer{
     width: auto;
     position: absolute 100% 0 0 65%;
     margin-top: -100px;
+    background: #000;
+    height: 120px;
+    
   }
 }
-
 
 .log{
   min-height: 780px;
@@ -68,15 +149,15 @@
   }
   
   .time{
-    padding-top:8px;
+    padding-top:8px!important;
     text-align:right;
     width:65px;
     position: relative;
-    vertical-align: middle;
+    vertical-align: top;
     
     &.timeProgres{
       line-height:12px; 
-      padding-top:7px; 
+      padding-top:6px !important;
       text-align:right; 
       width:65px;
       vertical-align: top;
@@ -130,7 +211,7 @@
     .fightTable{
       position:relative;
       margin:1px 0 5px 0;
-      background: #29211e;
+      background: transparent;
       text-align: right;
       
       &.table>tbody>tr>td, &.table>tbody>tr>th, &.table>tfoot>tr>td, &.table>tfoot>tr>th, &.table>thead>tr>td, &.table>thead>tr>th{
@@ -138,6 +219,7 @@
         border-bottom:0;
         text-align: right;
         vertical-align: middle;
+        padding: 5px 5px;
         
         &:first-child{
           text-align: left;
@@ -148,12 +230,12 @@
         font-weight: 400;
       }
       &.table>thead>tr{
-        background: #19120e;
+        background: rgba(64, 53, 47, 0.38);
       }
       
       .krest{
         position:absolute; 
-        left:-18px; 
+        left:-42px; 
         width:40px; 
         margin-top:14px; 
         font-size:12px; 
@@ -181,251 +263,306 @@ abbr {
   border-bottom: 1px dashed #f05020 !important;
   text-decoration: none !important;
 }
+.dead img {
+    filter: grayscale(1);
+    opacity: 0.8;
+}
 
-
-
-.mban{
-  color: #fff;
-  line-height: 1;
-  position: relative;
-  display: block;
-  z-index: 1;
-  background: url(/img/topLight.png) no-repeat 50% 0;
-  
-  &:hover,
-  &:active,
-  &:focus{
-    color: #fff;
-  }
-
-  .abg_wrap {
-    position: relative;
-    max-width: 1200px;
-    display: block;
-    margin: 0 auto;
-
-    @media (max-width: 1599px) {
-      max-width: 980px;
+@media (max-width: 1100px) {
+  .matchWrap{
+    .frameblock{
+      right: 40%;
     }
-
-    .abg_top {
-      position: relative;
-      max-width: 500px;
-      height: 120px;
-      display: block;
-      margin: 0 auto;
+    .log{
+      width: 40%;
+      margin-left: 60%;
       
-      .abg_md {
-        width: 100px;
-        height: 73px;
-        background: url(/img/mday.png) no-repeat 50% 50%;
-        background-size: cover;
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        margin-left: -50px;
-        z-index: 2;
-        
-        i {
-          position: absolute;
-          bottom: 4px;
-          left: 0;
-          right: 0;
-          text-align: center;
-          font-style: normal;
-          text-transform: uppercase;
-          font-size: 10px;
-          white-space: nowrap;
-        }
-      } /*abg_md*/
-      
-      .abg_i1, .abg_i2 {
-        width: 110px;
-        height: 70px;
-        position: absolute;
-        top: 10px;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        margin-top: 5px;
-        
-        b{
-          text-transform: uppercase;
-          display: block;
-          padding-top: 5px;
-        }
-        
-        &:before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            background: url(/img/tp1.png) no-repeat 50% 50%;
-            display: block;
-            width: 295px;
-            height: 200px;
-            margin: -100px -146px;
-            opacity: .4;
-            transition: all .3s linear;
-        }
-        img{
-          height: 70px;
-          max-width: 110px;
-          position: relative;
-          z-index: 2;
+      .time{
+        width: 45px;
+        &.timeProgres{
+          width: 45px;
         }
       }
-      .abg_i1 {
-          left: 0px;
-      }
-      .abg_i2 {
-        right: 0px;
-        
-        &:before {
-            background: url(/img/tp2.png) no-repeat 50% 50%;
-        }
-      }
-      
-      .kmob{
-        position: absolute;
-        left: 50%;
-        bottom: 10px;
-        width: 140px;
-        text-align: center;
-        margin-left: -70px;
-        text-decoration: none;
-        font-weight: 800;
-        font-size: 20px;
-      }
-    } /*abg_top*/
-  } /*abg_wrap*/
-}
-
-.dobet{
-    padding: 5px;
-    position: absolute;
-    float: right;
-    top: 10px;
-    right: 10px;
-    border: 1px dAShed #866448;
-    text-align: center;
-    width: 140px;
-    border-radius: 3px;
-  
-  .abg_btn {
-    display: inline-block;
-    background: url(/img/btnbg.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 128px;
-    height: 40px;
-    padding: 15px 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 10px;
-    text-align: center;
-    line-height: 1;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.48);
-    color: #ffffff;
-    transition: all .3s linear;
-    margin-top: -10px;
-  }
-  .ggbet {
-    display: inline-block;
-    background: url(/img/bets_gg.png) no-repeat 50% 50%;
-    background-size: cover;
-    width: 80px;
-    height: 34px;
-  }
-  .ggbetT {
-    display: inline-block;
-    font-size: 9px;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 700;
-    color: #f9f7c6;
-    text-shadow: 0 3px 5px #333;
-    line-height: 1;
-  }
-}
-
-.abg_mt{
-  color: #fff;
-  text-transform: uppercase;
-  position: absolute;
-  left: 0;
-  top: 32px;
-  font-weight: bold;
-  text-align: right;
-  max-width: 170px;
-  
-  b{
-    font-size: 14px;
-    display: block;
-  }
-  
-}
-
-@media (max-width: 990px) {
-  .abg {
-      top: 50px;
-    .abg_wrap {
-      .abg_top {
-        height: 75px;
-        margin: 50px auto;
-        max-width: 350px;
-        
-        .abg_md{
-          width: 60px;
-          height: 42px;
-          margin-left: -30px;
-          i{
-            bottom: 0px;
-          }
-        }
-        .abg_i1,.abg_i2 {
-          top: -3px;
-          img{
-            height: 40px;
-          }
-        }
-        .kmob{
-          font-size: 16px;
-        }
+      & tr:hover .time:before, 
+      & tr.active .time:before{
+        left: 2px;
+        font-size: 9px;
+        top: 20px;
       }
     }
   }
-  .abg_mt {
-    max-width: 50%;
-    text-align: right;
-    top: 10px;
-    font-size: 8px;
-    right: 80%;
+}
+
+/*
+ONLY portrait orientation
+*/
+
+@media (max-device-width: 960px) and (orientation : portrait){
+  .matchWrap{
+    .frameblock{
+      position: relative 0 0 0 0;
+      margin-top: 0px;
+      .frameTop{
+        position: relative 0 0 0 0;
+      }
+      .frame{
+        position: relative 0 0 0 0;
+        height: 550px;
+      }
+      .frameBottom{
+        position: relative 0 0 0 0;
+        margin: 0;
+        .btn-group-lg>.btn, .btn-lg {
+          padding: 5px 8px;
+          font-size: 15px;
+        }
+      }
+    }
     
-    b {
-      font-size: 9px;
+    .log{
+      float: none;
+      margin: 0;
+      width: auto;
+      padding: 15px;
     }
   }
-  .dobet {
-    top: -21px;
-    right: auto;
-    left: 80%;
+  .pageMatch footer {
+    width: auto;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin-top: -120px;
+    background: #000;
+    height: 120px;
   }
-}
-
-
-@media (max-width: 580px) {
-  .abg{
-    .dobet{
-      display: none;
-    }
-    .abg_mt {
-      text-align: center;
-      width: 100%;
-      top: -30px;
-      left: 0;
-      right: 0;
-      max-width: 100%;
-    }
-  }
-}
   
+  /*player fix*/
+  .fix{
+    z-index: 10;
+    position: relative;
+  }
+  .fix #ytplayer{
+    position: fixed 50px 0 * 0!important;
+    height: 450px;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 800px)  and (orientation : portrait){
+   .matchWrap{
+    .frameblock{
+      height: auto;
+      .frameTop {
+        height: auto;
+        padding: 10px 0;
+        .row{
+          display: block;
+
+          >div{
+            display: block;
+            height: auto;
+            vertical-align: middle;
+            float: none;
+            width: 100%!important;
+            text-align: center!important;
+            
+            i {
+              font-size: 18px;
+              margin: 0;
+            }
+            h1{
+              font-size: 16px;
+              margin: 5px 0;
+            }
+            b {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+      
+      .frame{
+        height: 450px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px)  and (orientation : portrait){
+   .matchWrap{
+    .frameblock{
+      .frame{
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px)  and (orientation : portrait){
+   .matchWrap{
+    .frameblock{
+      .frame{
+        height: 300px;
+      }
+    }
+    .log{
+      padding: 15px 5px;
+      .event{
+        .fightTable{
+          font-size: 11px;
+          td,
+          th{
+            padding: 5px 2px!important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px)  and (orientation : portrait){
+  .matchWrap{
+    .frameblock{
+      .frame{
+        height: 250px;
+      }
+    }
+    .fix #ytplayer{
+      height: 240px;
+    }
+  }
+}
+@media (max-width: 400px)  and (orientation : portrait){
+  .matchWrap{
+    .frameblock{
+      .frame{
+        height: 200px;
+      }
+    }
+    .fix #ytplayer{
+      height: 120px;
+    }
+  }
+}
+@media (max-width: 375px)  and (orientation : portrait){
+   .matchWrap{
+    .frameblock{
+      .frame{
+        height: 200px;
+      }
+    }
+     .fix #ytplayer{
+        height: 200px;
+      }
+  }
+}
+@media (max-width: 321px) and (orientation : portrait){
+   .matchWrap{
+    .frameblock{
+      .frame{
+        height: 180px;
+      }
+    }
+     .fix #ytplayer{
+        height: 180px;
+      }
+  }
+}
+
+
+
+/*
+ONLY landscape orientation
+*/
+
+@media (max-width: 736px) and (orientation : landscape){
+  .mban{
+    display: none !important;
+  }
+  .matchWrap{
+    .frameblock{
+
+      .frameTop{
+        height: 40px;
+        
+        .row {
+          > div{
+            height: 40px;
+            i{
+              font-size: 16px;
+              margin: 1px 0;
+            }
+            b{
+              font-size: 10px;
+              margin-left: 23px;
+            }
+            h1{
+                  font-size: 13px;
+              span{
+                    padding: 0 5px;
+              }
+            }
+            u{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .frame{
+        bottom: 45px;
+        top: 93px;
+      }
+      .frameBottom{
+        height: 40px;
+        margin-top: -45px;
+        overflow: visible;
+      }
+    }
+    .log{
+        font-size: 10px;
+      
+      &:before{
+        margin-left: 53px;
+      }
+      
+      .time{
+        padding-top: 6px!important;
+      }
+      .log-type {
+        width: 30px;
+        img{
+          width: 20px;
+          height: 20px;
+        }
+      }
+      tr:hover .time:before, 
+      tr.active .time:before {
+        left: 1px;
+        font-size: 8px;
+        top: 8px;
+      }
+      
+      .event {
+        img {
+          height: 17px;
+        }
+
+        .fightTable{
+          &.table>tbody>tr>td, &.table>tbody>tr>th, &.table>tfoot>tr>td, &.table>tfoot>tr>th, &.table>thead>tr>td, &.table>thead>tr>th{
+            padding: 4px 2px;
+          }
+          .krest {
+            width: 30px;
+            left: -35px;
+            margin-top: 8px;
+          }
+        }
+        .progress {
+          width: 30px;
+        }
+      }/*event*/
+    }
+  }
+}
+

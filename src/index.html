@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 {% include "template/head.html" %}
-<body class="dotaBg">  
+<body class="dotaBg index">  
   <div class="container mainwrap">
     
     <div class="otstup">
@@ -13,17 +13,14 @@
       </section>
       
       <section class="homeTable">
-        
         {% include "template/part/table.html" %}
-        
       </section>
       
       {% include "template/pager.html" %}
       
-      {% include "template/footer.html" %}
     </div>
   </div>
-  
+{% include "template/footer.html" %}
 {% include "template/bar.html" %}
 {% include "template/branding.html" %}
 {% include "template/modal.html" %}

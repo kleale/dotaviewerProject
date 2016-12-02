@@ -217,12 +217,6 @@
           img{
             width: 14px;
           }
-          &.f1{
-            float:left;
-          }
-          &.f2{
-            float:right;
-          }
         }
       }
     }
