@@ -3,100 +3,27 @@
 */
 
 .matchWrap{
-  padding: 50px 0 120px 0;
+  padding: 50px 0 100px 0;
   overflow: hidden;
   
   .frameblock{
-    position: fixed 0 35% 0 0;
+    position: fixed 0 383px 0 0;
     height: 100%;
     z-index: 4;
     
     .frame{
-      position: absolute 123px 0 185px 0;
+      position: absolute 50px 0 125px 0;
+      background: #111; 
 
       iframe{
         z-index: 2;
         position: relative;
       }
     }
-    .frameTop{
-      position: absolute 53px 0 * 0;
-      height: 70px;
-      background: #000 url(../img/frametop.jpg) no-repeat 0 0;
-      overflow: hidden;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.41);
-      
-      .row{
-        display: table;
-        width: 100%;
-        margin: 0;
-        
-        > div{
-          display: table-cell;
-          height: 70px;
-          vertical-align: middle;
-          float: none;
-          line-height: 1;
-          
-          &:nth-child(1){
-            width: 30%;
-          }
-          &:nth-child(2){
-            text-align: center;
-          }
-          &:nth-child(3){
-            text-align: right;
-            width: 30%;
-          }
-          i{
-            font-size: 24px;
-            margin: -2px 0;
-            display: inline-block;
-            vertical-align: bottom;
-            position: absolute;
-          }
-          >b{
-            text-transform: uppercase;
-            font-size: 13px;
-            margin-left: 30px;
-            display: inline-block;
-          }
-          h1{
-            display: inline-block;
-            font-size: 21px;
-            font-weight: bold;
-            margin: 10px 0;
-            padding: 0;
-            color: #f05020;
-            span{
-              padding: 0 20px;
-              color: #fff;
-            }
-          }
-          >u{
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: bold;
-            text-transform: uppercase;
-          }
-          
-          .mdrop{
-            width: 100px;
-            span{
-              overflow: hidden;
-              display: inline-block;
-              margin-right: -20px;
-              
-            }
-          }
-          
-        }
-      }
-    }
     .frameBottom{
       position: absolute 100% 0 0 0;
-      height: 185px;
-      margin-top: -185px;
+      height: 125px;
+      margin-top: -125px;
       background: #29211e;
       overflow: hidden;
     }
@@ -105,22 +32,68 @@
 
 .pageMatch{
   footer{
-    width: auto;
-    position: absolute 100% 0 0 65%;
+    width: 383px;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    position: absolute;
     margin-top: -100px;
     background: #000;
-    height: 120px;
+    height: 100px;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+
+.mdrop{
+  width: 150px;
+  float: right;
+  margin-right: 10px;
+  
+  @media (max-width: 990px) {
+    width: 65px;
+  }
+  .btn{
+    height: 34px;
+    color: #f05020;
     
+    &:hover,
+    &:focus,
+    &:active{
+      color: #fff;
+    }
+    .caret {
+      margin: 10px 0 8px 5px;
+      position: absolute;
+      right: 8px;
+    }
+    
+  }
+  #vtitle{
+    overflow: hidden;
+    display: inline-block;
+    margin-right: -25px;
+    width: 100%;
+    text-overflow: ellipsis;
+    u{
+      text-decoration: none;
+      font-weight: 600;
+    }
+    @media (max-width: 990px) {
+      b,em{
+        display: none;
+      }
+    }
   }
 }
 
 .log{
   min-height: 780px;
-  float: left;
-  width: 35%;
-  margin-left: 65%;
+  float: right;
+  width: 383px;
   position: relative;
-  padding: 10px 0 0 0;
+  padding: 0;
   font-size: 12px;
   background-image: url(../img/topgradient.png);
   background-repeat: repeat-x;
@@ -135,7 +108,7 @@
     background: #4c3c31;
     top: 30px;
     bottom: 5px;
-    margin-left: 83px;
+    margin-left: 19%;
   }
   .table{
     margin-bottom: 0; 
@@ -171,32 +144,39 @@
   tr:hover,
   tr.active{
     background: rgba(21, 14, 10, 0.45);
-    
+    /*
     .time:before{
       content:'';
       font-family: "gticons";
       position: absolute;
-      left: 5px;
-      font-size: 13px;
-      top: 8px;
+      left: 2px;
+      font-size: 12px;
+      top: 9px;
     }
+    */
   }
+  /*
   tr:hover{
     .time:before{
       opacity: .3;
     }
   }
-  
+  */
   .event{
     position:relative;
     padding-top:8px;
     vertical-align: middle;
     
     img {
-      height: 22px;
-      margin-right: 5px;
+      height: 20px;
+      margin: 2px 1px 2px 0;
       box-shadow: 0 0 0 1px #211a17;
       border-radius: 1px;
+      
+      &:nth-child(1){
+        margin: 2px 5px 2px 0;
+        height: 22px;
+      }
     }
     
     .progress{
@@ -210,7 +190,7 @@
     
     .fightTable{
       position:relative;
-      margin:1px 0 5px 0;
+      margin:2px 0 0 0;
       background: transparent;
       text-align: right;
       
@@ -219,7 +199,7 @@
         border-bottom:0;
         text-align: right;
         vertical-align: middle;
-        padding: 5px 5px;
+        padding: 3px 5px;
         
         &:first-child{
           text-align: left;
@@ -232,11 +212,14 @@
       &.table>thead>tr{
         background: rgba(64, 53, 47, 0.38);
       }
-      
+      &.table>tbody>tr>td:nth-child(2){
+        font-size: 1.1em;
+        color: #e4d3c3;
+      }
       .krest{
         position:absolute; 
-        left:-42px; 
-        width:40px; 
+        left:-52px; 
+        width:50px;
         margin-top:14px; 
         font-size:12px; 
         text-align:right; 
@@ -268,15 +251,30 @@ abbr {
     opacity: 0.8;
 }
 
+@media (min-width: 1680px) {
+  .log {
+    width: 490px;
+    &:before{
+      margin-left: 83px;
+    }
+  }
+  .matchWrap .frameblock {
+    right: 490px;
+  }
+  .pageMatch footer{
+    width: 490px;
+  }
+}
+
 @media (max-width: 1100px) {
   .matchWrap{
     .frameblock{
-      right: 40%;
+      
     }
     .log{
-      width: 40%;
-      margin-left: 60%;
-      
+      &:before{
+        margin-left: 63px;
+      }
       .time{
         width: 45px;
         &.timeProgres{
@@ -302,9 +300,11 @@ ONLY portrait orientation
     .frameblock{
       position: relative 0 0 0 0;
       margin-top: 0px;
+      /*
       .frameTop{
         position: relative 0 0 0 0;
       }
+      */
       .frame{
         position: relative 0 0 0 0;
         height: 550px;
@@ -354,6 +354,7 @@ ONLY portrait orientation
    .matchWrap{
     .frameblock{
       height: auto;
+      /*
       .frameTop {
         height: auto;
         padding: 10px 0;
@@ -382,11 +383,17 @@ ONLY portrait orientation
           }
         }
       }
-      
+      */
+      .frameBottom{
+        display: none;
+      }
       .frame{
         height: 450px;
       }
     }
+  }
+  .mban {
+    top: 0px;
   }
 }
 
@@ -408,7 +415,7 @@ ONLY portrait orientation
       }
     }
     .log{
-      padding: 15px 5px;
+      padding: 5px 5px;
       .event{
         .fightTable{
           font-size: 11px;
@@ -425,7 +432,7 @@ ONLY portrait orientation
   .matchWrap{
     .frameblock{
       .frame{
-        height: 250px;
+        height: 240px;
       }
     }
     .fix #ytplayer{
@@ -480,38 +487,15 @@ ONLY landscape orientation
   .mban{
     display: none !important;
   }
+  .pageMatch footer{
+    width: 283px;
+  }
   .matchWrap{
     .frameblock{
-
-      .frameTop{
-        height: 40px;
-        
-        .row {
-          > div{
-            height: 40px;
-            i{
-              font-size: 16px;
-              margin: 1px 0;
-            }
-            b{
-              font-size: 10px;
-              margin-left: 23px;
-            }
-            h1{
-                  font-size: 13px;
-              span{
-                    padding: 0 5px;
-              }
-            }
-            u{
-              font-size: 10px;
-            }
-          }
-        }
-      }
+      right: 283px;
       .frame{
-        bottom: 45px;
-        top: 93px;
+        bottom: 0px!important;
+        top: 50px;
       }
       .frameBottom{
         height: 40px;
@@ -520,10 +504,11 @@ ONLY landscape orientation
       }
     }
     .log{
-        font-size: 10px;
+      font-size: 10px;
+      width: 283px;
       
       &:before{
-        margin-left: 53px;
+        margin-left: 59px;
       }
       
       .time{
@@ -553,8 +538,8 @@ ONLY landscape orientation
             padding: 4px 2px;
           }
           .krest {
-            width: 30px;
-            left: -35px;
+            width: 50px;
+            left: -55px;
             margin-top: 8px;
           }
         }

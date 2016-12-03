@@ -59,11 +59,19 @@ a{
     display: none;
   }
   .barc{
+    height:50px;
     .dvLogo{
       display: block;
       width: 180px;
       float: left;
       margin: 5px;
+      @media (max-width: 990px) {
+        width: 40px;
+        overflow: hidden;
+        img{
+          width: 180px!important;
+        }
+      }
 
       img{
         width: 100%;
@@ -72,7 +80,54 @@ a{
     .sLang{
       float: right;
       margin: 9px;
+      
+      .gti-youtube-play{
+        color: #f05020;
+        font-size: 20px;
+        margin: 6px 10px 6px 10px;
+        display: inline-block;
+      }
     }
+    
+    .mheader{
+      float: left;
+      margin-left: 10px;
+      @media (max-width: 990px) {
+        margin-left: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-right: -210px;
+        width: calc(100% - 220px);
+        text-overflow: ellipsis;
+      }
+      
+      h1{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 13px 0;
+        padding: 5px 15px;
+        color: #f05020;
+        line-height: 1;
+        border-left: 1px solid rgba(255, 255, 255, 0.25);
+        @media (max-width: 990px) {
+          padding: 5px 5px;
+        }
+
+        span{
+          padding: 0 5px;
+          color: #fff;
+        }
+
+      }
+      span{
+        
+      }
+      .mMap{
+        text-decoration: none;
+      }
+    }
+    
   }
 }
 
