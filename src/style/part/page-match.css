@@ -217,13 +217,13 @@
         color: #e4d3c3;
       }
       .krest{
-        position:absolute; 
-        left:-52px; 
-        width:50px;
-        margin-top:14px; 
-        font-size:12px; 
-        text-align:right; 
-        color:red
+        position: absolute;
+        left: -82px;
+        width: 80px;
+        margin-top: 12px;
+        font-size: 12px;
+        text-align: right;
+        color: red;
       }
       
     }
@@ -538,9 +538,7 @@ ONLY landscape orientation
             padding: 4px 2px;
           }
           .krest {
-            width: 50px;
-            left: -55px;
-            margin-top: 8px;
+            margin-top: 7px;
           }
         }
         .progress {
