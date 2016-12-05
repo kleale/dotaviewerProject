@@ -37,9 +37,51 @@
         {% include "template/part/match-banner.html" %}
       </div>
     </section>
-      
     <section id="b2" class="log">
-      {% include "template/part/log.html" %}
+      <div class="logheader">
+        Лог матча
+      </div>
+      <div class="logTable">
+        {% include "template/part/log.html" %}
+      </div>
+      <div class="summary">
+        <div class="logheader">
+          Итоги матча
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <td>Navi</td>
+              <td>KDA</td>
+              <td>Gold</td>
+            </tr>
+          </thead>
+          {% for i in 0..5 %}
+          <tr>
+            <th><img src="http://cdn.dota2.com/apps/dota2/images/heroes/dazzle_sb.png"></th>
+            <td>23</td>
+            <td>321</td>
+          </tr>
+          {% endfor %}
+        </table>
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <td>Vega</td>
+              <td>KDA</td>
+              <td>Gold</td>
+            </tr>
+          </thead>
+          {% for i in 0..5 %}
+          <tr>
+            <th><img src="http://cdn.dota2.com/apps/dota2/images/heroes/dazzle_sb.png"></th>
+            <td>23</td>
+            <td>321</td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
     </section>
     
   </div>
