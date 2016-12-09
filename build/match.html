@@ -86,6 +86,19 @@
     <section id="b2" class="log">
       <div class="logheader">
         Лог матча
+        <div class="mapDrop">
+          <b>Выбрать игру</b>
+          <div class="dropdown pull-right">
+            <button class="btn btn-border btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Карта <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Карта 1</a></li>
+              <li><a href="#">Карта 2</a></li>
+              <li><a href="#">Карта 3</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="logTable">
         <!-- /part/log.html -->
@@ -94,11 +107,36 @@
 
 
 
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover({
+      placement: 'bottom',
+      html: true
+    });
+    
+    //close popup
+    $(document).on('click', function (e) {
+        $('[data-toggle="popover"],[data-original-title]').each(function () {
+            //the 'is' for buttons that trigger popups
+            //the 'has' for icons within a button that triggers a popup
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {                
+                (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false  // fix for BS 3.3.6
+            }
+
+        });
+    });
+  }); //end ready
+</script>
 
 <table class="table table-condensed list">
   <tbody>
-    <tr rel="ward" class="active">
-      <td class="time"><a href="javascript:;" title="22969" onclick="video(755,'ukg49m8fFis')">-01:15</a></td>
+    <tr rel="ward">
+      <td class="time">
+        <u class="tpop" data-toggle="popover" title="Поделиться моментом" 
+        data-content="<div class='tsc'><a target='_blank' href='http://vk.com/share.php?url=http://dotaviewer.com/ru/2829954318?fight=335363'><i class='gti-vk'></i></a><a target='_blank' href=''><i class='gti-odnoklassniki'></i></a><a target='_blank' href=''><i class='gti-facebook'></i></a><a target='_blank' href=''><i class='gti-twitter'></i></a><a target='_blank' href=''><i class='gti-google-plus'></i></a></div><input type='text' onclick=' $(this).select();' class='input-sm form-control' value='http://dotaviewer.com/ru/2829954318?fight=335363' />"><i class="gti-share"></i>
+      </u>
+      
+      <a href="javascript:;" title="22969" onclick="video(755,'ukg49m8fFis')">-01:15</a></td>
       <td class="log-type"><img src="http://team-hunter.com/html/images/log-type/ward_86.png"></td>
       <td class="event">
         <img src="http://cdn.dota2.com/apps/dota2/images/heroes/witch_doctor_sb.png"> поставил вард
@@ -111,7 +149,7 @@
         <img src="http://cdn.dota2.com/apps/dota2/images/heroes/batrider_sb.png"> поставил вард
       </td>
     </tr>
-    <tr rel="ward">
+    <tr rel="ward" class="active">
       <td class="time"><a href="javascript:;" title="23963" onclick="video(788,'ukg49m8fFis')">-00:42</a></td>
       <td class="log-type"><img src="http://team-hunter.com/html/images/log-type/ward_86.png"></td>
       <td class="event">
@@ -1599,16 +1637,26 @@ All game images and names are property of Valve Corporation. Game info updated w
     <a href="/" class="dvLogo"><img src="/img/logo.png" alt="dotaviewer.com"></a>
     
     <div class="mheader">
-      <h1>
-        Vega <span>VS</span> Navi
-      </h1>
-      <u class="mMap">
-        Карта 3
-      </u>
-      &nbsp;&nbsp;/&nbsp;&nbsp;
-      <span>
-        Dotapit Season 5
-      </span>
+      <div class="bc">
+        <h1>
+          Vega <span>VS</span> Navi
+        </h1>
+        /
+        <span>
+          Dotapit Season 5
+        </span>
+      </div>
+      
+      <div class="dropdown mapDrop pull-right">
+        <button class="btn btn-border btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Карта <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Карта 1</a></li>
+          <li><a href="#">Карта 2</a></li>
+          <li><a href="#">Карта 3</a></li>
+        </ul>
+      </div>
     </div>
     
 

@@ -117,11 +117,20 @@
   height: 28px;
   .caret {
     margin: 7px 0 7px 5px;
+    position: absolute 4px 4px * *;
   }
 }
 .btn-xs{
   .caret {
     margin: 3px 0 3px 5px !important;
+  }
+}
+.input-group-btn{
+  .dropdown-toggle{
+    padding-right: 10px;
+    .caret {
+      position: relative 0 0 0 0;
+    }
   }
 }
 .btn-default{
@@ -143,9 +152,9 @@
 }
 .dropdown-toggle{
   text-align: left;
+  padding-right: 20px;
   .caret{
-    float: right;
-    margin: 8px 0 8px 5px;
+    position: absolute 6px 7px * *;
   }
 }
 .input-group-btn .dropdown-toggle .caret{
@@ -463,3 +472,84 @@ Tabs mobile
     }
   }
 }
+
+.popover {
+  background-color: #353131;
+}
+.popover.bottom>.arrow:after {
+  border-bottom-color: #353131;
+}
+.popover-title {
+  background: #3c3632;
+  text-align: center;
+  border-bottom: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #f05020;
+}
+.tsc {
+  margin-bottom: 10px;
+  text-align: center;
+  a{
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+    line-height: 33px;
+    height: 32px;
+    background: #4da1e4;
+    opacity: .8;
+    margin-right: 8px;
+    
+    &:nth-child(1){
+      background: #45668e;
+    }
+    &:nth-child(2){
+      background: #cee3f8;
+      color:#333; 
+    }
+    &:nth-child(3){
+      background: #3b5998;
+    }
+    &:nth-child(4){
+      background: #00aced;
+    }
+    &:nth-child(5){
+      background: #dd4b39;
+    }
+    &:hover,
+    &:active,
+    &:focus{
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+}
+.popover-content{
+  input{
+    width: 200px;
+  }
+}
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

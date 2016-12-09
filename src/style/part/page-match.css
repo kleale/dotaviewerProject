@@ -52,7 +52,7 @@
   margin-right: 10px;
   
   @media (max-width: 990px) {
-    width: 65px;
+    width: 38px;
   }
   .btn{
     height: 34px;
@@ -67,6 +67,9 @@
       margin: 10px 0 8px 5px;
       position: absolute;
       right: 8px;
+      @media (max-width: 990px) {
+        right: 0px;
+      }
     }
     
   }
@@ -88,9 +91,22 @@
   }
 }
 .logheader{
-  text-align: center;
   padding: 10px;
   font-size: 18px;
+  background: #42362d;
+  
+  .mapDrop{
+    float: right;
+    position: relative;
+    .dropdown{
+      margin-left: 10px;
+      display: inline-block;
+    }
+    b{
+      font-size: 11px;
+      opacity: .5;
+    }
+  }
 }
 .log{
   min-height: 780px;
@@ -106,6 +122,7 @@
   
   .logTable{
     position: relative;
+    
       &:before {
       content: '';
       position: absolute;
@@ -114,7 +131,8 @@
       background: #4c3c31;
       top: 30px;
       bottom: -10px;
-      margin-left: 83px;
+      margin-left: 71px;
+        
     }
   }
   
@@ -136,6 +154,14 @@
     position: relative;
     vertical-align: top;
     
+    .tpop{
+      position: absolute 3px * * 3px;
+      z-index: 2;
+      cursor: pointer;
+      text-decoration: none;
+      opacity: 0;
+    }
+    
     &.timeProgres{
       line-height:12px; 
       padding-top:11px !important;
@@ -152,24 +178,14 @@
   tr:hover,
   tr.active{
     background: rgba(21, 14, 10, 0.45);
-    /*
-    .time:before{
-      content:'';
-      font-family: "gticons";
-      position: absolute;
-      left: 2px;
-      font-size: 12px;
-      top: 9px;
-    }
-    */
   }
-  /*
-  tr:hover{
-    .time:before{
-      opacity: .3;
-    }
+  
+  tr:hover .tpop,
+  tr:focus .tpop,
+  tr:active .tpop{
+      opacity: 1;
   }
-  */
+  
   .event{
     position:relative;
     padding-top:8px;
@@ -321,6 +337,9 @@ abbr {
     &:before{
       margin-left: 83px;
     }
+    .logTable:before{
+      margin-left: 83px;
+    }
   }
   .matchWrap .frameblock {
     right: 490px;
@@ -336,7 +355,7 @@ abbr {
       
     }
     .log{
-      &:before{
+      .logTable:before{
         margin-left: 63px;
       }
       .time{
@@ -392,7 +411,6 @@ ONLY portrait orientation
       .table>tbody>tr>td{
         padding: 3px 5px;
       }
-      
     }
   }
   .pageMatch footer {
@@ -620,4 +638,10 @@ ONLY landscape orientation
     }
   }
 }
+
+
+
+
+
+
 

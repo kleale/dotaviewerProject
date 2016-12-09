@@ -40,6 +40,19 @@
     <section id="b2" class="log">
       <div class="logheader">
         Лог матча
+        <div class="mapDrop">
+          <b>Выбрать игру</b>
+          <div class="dropdown pull-right">
+            <button class="btn btn-border btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Карта <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Карта 1</a></li>
+              <li><a href="#">Карта 2</a></li>
+              <li><a href="#">Карта 3</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="logTable">
         {% include "template/part/log.html" %}
